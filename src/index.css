@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: rgba(0, 0, 0, 0.45);
+  --link-invert-bg: #000000;
+  --link-invert-text: #ffffff;
+  --selection-bg: #000000;
+  --selection-text: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #141416;
+    --text-primary: #e2e2e6;
+    --text-secondary: rgba(226, 226, 230, 0.45);
+    --link-invert-bg: #e2e2e6;
+    --link-invert-text: #141416;
+    --selection-bg: #e2e2e6;
+    --selection-text: #141416;
+  }
+}
+
 @layer base {
   :root {
     font-family: 'Google Sans Flex', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -9,15 +31,21 @@
   body {
     font-family: 'Google Sans Flex', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 520;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  ::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
   }
 }
 
 .sliding-link {
   position: relative;
   display: inline-block;
-  color: #000000;
+  color: var(--text-primary);
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1.5px;
@@ -34,7 +62,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #000000;
+  background-color: var(--link-invert-bg);
   z-index: -1;
   transition: width 0.24s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -46,11 +74,11 @@
 
 .sliding-link:hover,
 .sliding-link:focus-visible {
-  color: #ffffff;
+  color: var(--link-invert-text);
   text-decoration-color: transparent;
 }
 
 .sliding-link:focus-visible {
-  outline: 2px solid #000000;
+  outline: 2px solid var(--text-primary);
   outline-offset: 3px;
 }
