@@ -16,7 +16,7 @@ export default function App() {
           <p>
             my name is{' '}
             <a
-              href="https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang"
+              href="https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50"
               target="_blank"
               rel="noopener noreferrer"
               className="sliding-link"
