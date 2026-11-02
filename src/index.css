@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    font-family: 'Google Sans Flex', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 520;
+  }
+
+  body {
+    font-family: 'Google Sans Flex', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 520;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+.sliding-link {
+  position: relative;
+  display: inline-block;
+  color: #000000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  padding: 0 4px;
+  margin: 0 -2px;
+  z-index: 1;
+  transition: color 0.22s cubic-bezier(0.16, 1, 0.3, 1), text-decoration-color 0.15s ease;
+}
+
+.sliding-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #000000;
+  z-index: -1;
+  transition: width 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sliding-link:hover::before,
+.sliding-link:focus-visible::before {
+  width: 100%;
+}
+
+.sliding-link:hover,
+.sliding-link:focus-visible {
+  color: #ffffff;
+  text-decoration-color: transparent;
+}
+
+.sliding-link:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+}
