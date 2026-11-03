@@ -22,3 +22,7 @@ User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://franklyn.ai.studio/sitemap.xml
+
+# Agentic Resource Discovery & LLM Context
+# ARD: https://franklyn.ai.studio/.well-known/ard.json
+# LLMs: https://franklyn.ai.studio/llms.txt

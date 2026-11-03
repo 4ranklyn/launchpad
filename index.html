@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Guard against environments where window.fetch only has a getter defined,
+      // preventing "TypeError: Cannot set property fetch of #<Window> which has only a getter"
+      // when polyfills, extensions, or interceptors assign window.fetch
+      (function() {
+        try {
+          var _f = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return _f;
+            },
+            set: function(val) {
+              _f = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (_) {}
+      })();
+    </script>
     <title>Jasson Franklyn Wang — Personal Launchpad & Portfolio</title>
     <meta
       name="description"
@@ -37,15 +57,37 @@
       content="Official personal launchpad and portfolio of Jasson Franklyn Wang. Google Ambassador who represented Indonesia to Google I/O."
     />
 
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https:; base-uri 'self'; form-action 'self';"
+    />
+
+    <!-- Agentic & LLM Resource Discovery -->
+    <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context" />
+    <link rel="alternate" type="application/json" href="/.well-known/ard.json" title="Agentic Resource Discovery (ARD)" />
+
     <meta name="color-scheme" content="light dark" />
 
-    <!-- Google Sans Flex Font -->
+    <!-- Optimized Google Sans Flex Font Delivery (Non-blocking with display=swap and system fallbacks) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,100..1000&display=swap"
-      rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,100..1000&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,100..1000&display=swap"
+      />
+    </noscript>
 
     <link rel="canonical" href="https://franklyn.ai.studio/" />
 

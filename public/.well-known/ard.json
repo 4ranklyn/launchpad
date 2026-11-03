@@ -1,0 +1,61 @@
+{
+  "$schema": "https://agentic.org/schemas/ard-v1.json",
+  "name": "Jasson Franklyn Wang — Personal Launchpad & Portfolio",
+  "description": "Agentic discovery manifest and resource index for Jasson Franklyn Wang (franklynical).",
+  "version": "1.0.0",
+  "canonical_url": "https://franklyn.ai.studio",
+  "agent_endpoints": {
+    "llms_txt": "https://franklyn.ai.studio/llms.txt",
+    "sitemap": "https://franklyn.ai.studio/sitemap.xml",
+    "ard": "https://franklyn.ai.studio/.well-known/ard.json"
+  },
+  "entity": {
+    "type": "Person",
+    "name": "Jasson Franklyn Wang",
+    "handle": "franklynical",
+    "title": "Product Manager & Builder",
+    "email": "jassonfranklyn@gmail.com",
+    "affiliation": "Privy",
+    "achievements": [
+      "1 of 7 Indonesian delegates for Google I/O 2026 (Mountain View)",
+      "Student Global Marketing Pitch Challenge Winner (Google I/O 2026)",
+      "Google Student Ambassador 2x Content Grand Champion (2025)",
+      "Bangkit Academy Machine Learning Apprentice & Capstone PM (H2 2024)"
+    ],
+    "social": {
+      "github": "https://github.com/4ranklyn",
+      "linkedin": "https://linkedin.com/in/franklynical",
+      "instagram": "https://instagram.com/franklynical",
+      "google_search": "https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50"
+    }
+  },
+  "capabilities": {
+    "content_negotiation": [
+      "text/html",
+      "text/plain",
+      "application/json",
+      "text/markdown"
+    ],
+    "supported_protocols": [
+      "HTTPS",
+      "MCP"
+    ],
+    "ai_friendly_format": "https://franklyn.ai.studio/llms.txt"
+  },
+  "resources": [
+    {
+      "id": "portfolio-profile",
+      "name": "Personal Profile & Launchpad",
+      "uri": "https://franklyn.ai.studio/",
+      "mime_type": "text/html",
+      "description": "Interactive personal portfolio and launchpad."
+    },
+    {
+      "id": "llms-txt",
+      "name": "LLMs Plaintext Context",
+      "uri": "https://franklyn.ai.studio/llms.txt",
+      "mime_type": "text/markdown",
+      "description": "Concise Markdown context formatted per /llms.txt standard for AI crawlers, agents, and LLMs."
+    }
+  ]
+}
