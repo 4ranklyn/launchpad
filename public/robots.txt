@@ -6,10 +6,16 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+User-agent: GoogleOther
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
 User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: PerplexityBot
@@ -18,7 +24,19 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
 Allow: /
 
 Sitemap: https://franklyn.page/sitemap.xml
@@ -26,3 +44,4 @@ Sitemap: https://franklyn.page/sitemap.xml
 # Agentic Resource Discovery & LLM Context
 # ARD: https://franklyn.page/.well-known/ard.json
 # LLMs: https://franklyn.page/llms.txt
+# LLMs-Full: https://franklyn.page/llms-full.txt

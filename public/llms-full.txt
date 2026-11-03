@@ -1,62 +1,68 @@
 # Jasson Franklyn Wang — Comprehensive Portfolio & Background
 
-> Complete background, biography, career history, technical competencies, and project details for Jasson Franklyn Wang (handle: franklynical).
+> Complete background, biography, career history, technical competencies, and verifiable project details for Jasson Franklyn Wang (handle: franklynical).
 
 ## Overview
 - **Name**: Jasson Franklyn Wang
-- **Aliases**: franklynical, Franklyn Wang, Jasson Wang
-- **Current Role**: Product Manager Intern at Privy
+- **Aliases**: franklynical, Franklyn Wang, Jasson Wang, Frank
+- **Current Role**: Product Manager Intern at Privy (PT Privy Identitas Digital)
 - **Primary Website**: [https://franklyn.page/](https://franklyn.page/)
 - **Contact Email**: [mailto:jassonfranklyn@gmail.com](mailto:jassonfranklyn@gmail.com)
 - **Nationality**: Indonesian
 
-## Professional Experience
+## Professional Experience & Global Milestones
 
-### Privy
-- **Role**: Product Manager Intern
-- **Focus**: Unlearning and relearning modern product management in a high-growth identity and digital trust ecosystem. Collaborating across cross-functional engineering, design, and business teams to architect user-centric digital signature and identity verification workflows.
-- **Reference Anchor**: [https://franklyn.page/llms-full.txt#privy](https://franklyn.page/llms-full.txt#privy)
+### Privy {#privy}
+- **Role**: Product Manager Intern (2026)
+- **Focus**: Executing product discovery, authoring Product Requirement Documents (PRDs), and streamlining release note CMS pipelines within a high-growth digital trust and electronic identity ecosystem. Collaborating across cross-functional engineering, design, and business teams to architect user-centric digital signature and identity verification workflows.
+- **Reference Anchor**: [https://franklyn.page/#privy](https://franklyn.page/#privy)
 
-### Google I/O 2026 (Mountain View, California)
-- **Role**: Indonesian Delegate & Prototype Presenter (Q2 2026)
-- **Achievement**: Selected as 1 of 7 Indonesian delegates invited to Google Headquarters in Mountain View, California. Presented prototype directly to global developer audience; team won the Student Global Marketing Pitch Challenge.
-- **Reference Anchor**: [https://franklyn.page/llms-full.txt#google-io-2026](https://franklyn.page/llms-full.txt#google-io-2026)
+### Google I/O 2026 (Mountain View, California) {#google-io-2026}
+- **Role**: Indonesian National Student Delegate & Prototype Presenter (May 2026)
+- **Achievement**: Selected as 1 of 7 Indonesian delegates invited to Google Headquarters in Mountain View, California. Presented the **MakanSini** prototype directly to an international developer audience and won **1st Place** in the global "Dragons' Den" Back-to-School Student Marketing Pitch Challenge.
+- **Reference Anchor**: [https://franklyn.page/#google-io-2026](https://franklyn.page/#google-io-2026)
 
-### Google Student Ambassador (2025)
-- **Role**: Ambassador (2nd generation, 1st cohort)
-- **Recognition**: Ranked in the Top 100 Google Student Ambassadors. Awarded 2x Content Grand Champion with one of the highest recorded engagement metrics across tech community initiatives and educational campaigns.
-- **Reference Anchor**: [https://franklyn.page/llms-full.txt#google-student-ambassador](https://franklyn.page/llms-full.txt#google-student-ambassador)
+### Google Student Ambassador Indonesia {#google-student-ambassador}
+- **Role**: Ambassador — 2nd Generation, 1st Cohort, Rising Star Tier (2025–2026)
+- **Recognition**: Selected among the Top 100 Google Student Ambassadors in Indonesia. Awarded **2x Content Grand Champion** (including Grand Champion in the Google AI Content Champion competition) while generating over **120,000+ organic content reach** across developer advocacy and educational AI campaigns.
+- **Reference Anchor**: [https://franklyn.page/#google-student-ambassador](https://franklyn.page/#google-student-ambassador)
 
-### Bangkit Academy (H2 2024)
-- **Role**: Machine Learning Apprentice & Capstone Product Manager (Final Cohort)
-- **Focus**: Led capstone product management from conception to deployment, bridging applied machine learning models with accessible user interfaces and viable business roadmaps.
-- **Reference Anchor**: [https://franklyn.page/llms-full.txt#bangkit-academy](https://franklyn.page/llms-full.txt#bangkit-academy)
+### Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka {#bangkit-academy}
+- **Role**: Machine Learning Apprentice & Product Capstone Lead (H2 2024 Cohort)
+- **Focus**: Led cross-functional product management and machine learning integration for **CeKulit** from discovery to deployment, bridging computer vision models with accessible mobile user interfaces and structured product roadmaps.
+- **Reference Anchor**: [https://franklyn.page/#bangkit-academy](https://franklyn.page/#bangkit-academy)
 
-## Education & Technical Foundation
+### Rumah Sakit UNS Surakarta (IT Project & Engineering Internship)
+- **Role**: IT Intern (2025)
+- **Impact**: Architected and deployed an internal Laravel ticketing system integrated with automated Telegram webhooks, reducing internal issue routing latency by 30%.
+
+## Education, Research & Public Speaking {#education}
 
 ### Universitas Sebelas Maret (UNS)
-- **Degree**: Bachelor of Computer Science (Informatics / Compsci graduate)
-- **Foundation**: Strong core in algorithms, data structures, software engineering, and systems architecture.
-- **Reference Anchor**: [https://franklyn.page/llms-full.txt#education](https://franklyn.page/llms-full.txt#education)
+- **Degree**: Bachelor of Informatics / Computer Science (S.Kom.), graduated May 2026 (3.67 GPA)
+- **Published Research**: Authored and presented research evaluating Swin Transformer visual encoders for Indonesian language image captioning at the International Conference on Informatics and Computing (**ICIC 2026**).
+- **Public Speaking & Leadership**: Selected as a Student Speaker Finalist for **TEDxUNS** (May 2025), delivering the talk *"The Rule of Authenticity"*. Completed the nine-week global **Aspire Leaders Program** curriculum (April 2026).
+- **Reference Anchor**: [https://franklyn.page/#education](https://franklyn.page/#education)
 
-## Core Competencies & Focus Areas
+## Core Competencies & Technical Stack
 
-### AI Product Development
-- **LLM Workflows**: Designing structured prompt pipelines, evaluation frameworks, and tool-augmented generation.
-- **Agentic Architectures**: Multi-agent coordination, autonomous tool calling, and human-in-the-loop workflows.
+### AI Product Development & Architecture
+- **LLM Workflows**: Designing structured prompt pipelines, evaluation harnesses, and tool-augmented generation using Gemini API, OpenAI, and Claude ecosystems.
+- **Agentic Architectures**: Multi-agent coordination, autonomous tool calling, and LLM-native sub-agent harnesses for product requirement workflows.
 - **Model Context Protocol (MCP)**: Implementing standard context and tool servers enabling LLMs to safely query data stores and execute external actions.
 - **Retrieval-Augmented Generation (RAG)**: Embedding pipelines, vector search retrieval, hybrid keyword/vector search, and context reranking.
-- **Rapid Prototyping**: Fast turnaround from user pain point to interactive proof-of-concept using React, TypeScript, and modern API stacks.
+- **Rapid Full-Stack Prototyping**: Fast turnaround from user pain point to interactive proof-of-concept using React, Next.js, TypeScript, Tailwind CSS, Python, Go, Kotlin (Jetpack Compose), Firebase, and Cloud Run.
 
-### Media & Creative Direction
-- **Video & Visual Media Production**: Directing, editing, and producing high-impact visual media when ideas need broad distribution and community resonance.
+### Media & Creative Direction {#media}
+- **Video & Visual Media Production**: Directing, scripting, and editing high-retention short-form video and carousel media when ideas and products require broad organic distribution.
+- **Reference Anchor**: [https://franklyn.page/#media](https://franklyn.page/#media)
 
 ## Verified External Profiles
 - [Personal Launchpad](https://franklyn.page/): Interactive web portfolio.
-- [GitHub (@4ranklyn)](https://github.com/4ranklyn): Code repositories and open source work.
+- [GitHub (@4ranklyn)](https://github.com/4ranklyn): Code repositories and open-source prototypes.
 - [LinkedIn (franklynical)](https://linkedin.com/in/franklynical): Professional network and career updates.
-- [Instagram (@franklynical)](https://instagram.com/franklynical): Creative media and personal chronicles.
-- [Google Search Knowledge Panel](https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50): Verified Google Search identity.
+- [Instagram (@franklynical)](https://instagram.com/franklynical): Creative media and visual chronicles.
+- [Google Search Knowledge Panel](https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50): Verified Google Search entity identity.
 - [Email](mailto:jassonfranklyn@gmail.com): Direct communication channel.
 
 ## Discovery & Standards Metadata

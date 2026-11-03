@@ -23,7 +23,12 @@ export default function App() {
     }, 280);
   };
 
-  const handlePointerToggle = (e: React.PointerEvent) => {
+  const handleClick = (e: React.MouseEvent) => {
+    // If user is selecting text, do not toggle the social tray
+    const selection = window.getSelection();
+    if (selection && selection.toString().trim().length > 0) {
+      return;
+    }
     e.stopPropagation();
     if (socialTimerRef.current) clearTimeout(socialTimerRef.current);
     setIsSocialOpen((prev) => !prev);
@@ -53,9 +58,9 @@ export default function App() {
   return (
     <main className="min-h-screen px-6 sm:px-10 py-16 sm:py-24 md:py-32 flex flex-col justify-between">
       <article className="max-w-2xl mx-auto w-full space-y-8 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.75] font-[460] tracking-[-0.01em]">
-        <header className="space-y-2">
+        <header id="overview" className="space-y-2">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-[500] tracking-tight">
-            hello!
+            hello!<span className="sr-only"> — Jasson Franklyn Wang (franklynical) Personal Launchpad &amp; Portfolio</span>
           </h1>
           <p>
             my name is{' '}
@@ -146,16 +151,16 @@ export default function App() {
                 />
               </span>
 
-              {/* The Name Trigger with Fluid Sliding Inverse Highlight */}
+              {/* The Name Trigger with Fluid Sliding Inverse Highlight - Semantic Text with Interactive Capabilities */}
               <span
                 role="button"
                 tabIndex={0}
+                aria-haspopup="dialog"
                 aria-expanded={isSocialOpen}
-                aria-label="jasson franklyn wang - tap to toggle links"
-                className={`sliding-link cursor-pointer select-none ${
+                className={`sliding-link cursor-pointer select-text ${
                   isSocialOpen ? 'active' : ''
                 }`}
-                onPointerDown={handlePointerToggle}
+                onClick={handleClick}
                 onKeyDown={(e) => {
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
@@ -173,19 +178,19 @@ export default function App() {
           </p>
         </header>
 
-        <section>
+        <section id="privy" aria-label="Privy Product Management">
           <p>
             currently interning at Privy as Product Manager, unlearning and relearning product management.
           </p>
         </section>
 
-        <section>
+        <section id="google-io-2026" aria-label="Google I/O 2026 Mountain View">
           <p>
             i was 1 of 7 Indonesian delegate for Google I/O 2026 (Q2 2026), live in Mountain View. i presented my prototype, my team won the student global marketing pitch challenge.
           </p>
         </section>
 
-        <section className="space-y-1">
+        <section id="google-student-ambassador" aria-label="Google Student Ambassador" className="space-y-1">
           <p>
             before, i was 2nd gen, 1st cohort of Google Student Ambassador (2025).
           </p>
@@ -193,25 +198,25 @@ export default function App() {
           <p>one of highest engagements.</p>
         </section>
 
-        <section>
+        <section id="bangkit-academy" aria-label="Bangkit Academy">
           <p>
             even before, i was a Machine Learning Apprentice and Capstone Product Manager during Bangkit Academy last cohort (H2 2024).
           </p>
         </section>
 
-        <section>
+        <section id="education" aria-label="Education and Technical Focus">
           <p>
             i possess technical foundation from college, now focusing on AI product development, (harnessing LLM workflows, agentic architectures, MCP, RAG), and rapid prototyping, while enriching business acumen.
           </p>
         </section>
 
-        <section>
+        <section id="media" aria-label="Media and Distribution">
           <p>
             i also edit video and produce visual media when ideas need distribution.
           </p>
         </section>
 
-        <section>
+        <section id="contact" aria-label="Contact">
           <p>
             anything to talk?
             <br />

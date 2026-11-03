@@ -1,9 +1,9 @@
 # Jasson Franklyn Wang — Personal Launchpad & Portfolio
 
-> Official personal launchpad and portfolio of Jasson Franklyn Wang (handle: franklynical) — Product Manager, Builder, UNS Informatics graduate, Google Student Ambassador 2x Content Grand Champion, and Indonesian delegate for Google I/O 2026.
+> Official personal launchpad and portfolio of Jasson Franklyn Wang (handle: franklynical) — Product Manager at Privy, AI Builder, Universitas Sebelas Maret (UNS) Informatics graduate, Google Student Ambassador 2x Content Grand Champion, and Indonesian national delegate for Google I/O 2026 in Mountain View.
 
 ## Companion Documentation & Manifests
-- [Comprehensive Biography & Deep-Dive](https://franklyn.page/llms-full.txt): Complete career background, milestones, technical competencies, and detailed project documentation.
+- [Comprehensive Biography & Deep-Dive](https://franklyn.page/llms-full.txt): Complete career background, verified milestones, shipped prototypes, technical competencies, and academic honors.
 - [Agentic Resource Discovery Manifest](https://franklyn.page/.well-known/ard.json): Machine-readable ARD discovery manifest for AI agents, MCP clients, and registries.
 - [Personal Launchpad](https://franklyn.page/): Interactive web portfolio and personal launchpad.
 - [XML Sitemap](https://franklyn.page/sitemap.xml): Search engine and web crawler discovery index.
@@ -16,8 +16,8 @@
 - [Direct Email](mailto:jassonfranklyn@gmail.com): Direct contact for inquiries, collaborations, and discussions.
 
 ## Key Career Milestones
-- [Privy Product Management](https://franklyn.page/llms-full.txt#privy): Current Product Manager internship focusing on digital trust and identity systems.
-- [Google I/O 2026 Mountain View](https://franklyn.page/llms-full.txt#google-io-2026): 1 of 7 Indonesian delegates in Mountain View; presented prototype and won Student Global Marketing Pitch Challenge.
-- [Top 100 Google Student Ambassador](https://franklyn.page/llms-full.txt#google-student-ambassador): 2nd gen, 1st cohort (2025); 2x Content Grand Champion with highest engagement.
-- [Bangkit Academy](https://franklyn.page/llms-full.txt#bangkit-academy): Machine Learning Apprentice and Capstone Product Manager (H2 2024 cohort).
-- [UNS Informatics](https://franklyn.page/llms-full.txt#education): Computer Science graduate from Universitas Sebelas Maret with solid engineering foundations.
+- [Privy Product Management](https://franklyn.page/llms-full.txt#privy): Product Manager Intern at PT Privy Identitas Digital focusing on digital trust, identity verification, and product discovery workflows.
+- [Google I/O 2026 Mountain View](https://franklyn.page/llms-full.txt#google-io-2026): Selected as 1 of 7 Indonesian delegates in Mountain View, California; presented the MakanSini prototype and won 1st Place in the Student Global Marketing Pitch Challenge.
+- [Top 100 Google Student Ambassador](https://franklyn.page/llms-full.txt#google-student-ambassador): 2nd gen, 1st cohort (2025) Rising Star tier; 2x Content Grand Champion achieving 120,000+ organic content reach.
+- [Bangkit Academy](https://franklyn.page/llms-full.txt#bangkit-academy): Machine Learning Apprentice and Capstone Product Manager leading the CeKulit project (H2 2024 cohort).
+- [UNS Informatics & Honours](https://franklyn.page/llms-full.txt#education): Bachelor of Informatics from Universitas Sebelas Maret (UNS), ICIC 2026 published researcher, and TEDxUNS Student Speaker Finalist.

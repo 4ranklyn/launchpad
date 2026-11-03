@@ -20,7 +20,7 @@ app.use(
   })
 );
 
-// Enforce Best-Practice Security Headers
+// Enforce Best-Practice Security & Agent Discovery Headers
 app.use((req: Request, res: Response, next: NextFunction) => {
   // HTTP Strict Transport Security (HSTS)
   res.setHeader(
@@ -42,6 +42,12 @@ app.use((req: Request, res: Response, next: NextFunction) => {
       "base-uri 'self'",
       "form-action 'self'",
     ].join('; ')
+  );
+
+  // Agentic & LLM Context Discovery Link Header
+  res.setHeader(
+    'Link',
+    '</llms.txt>; rel="llms-txt"; type="text/markdown", </llms-full.txt>; rel="alternate"; type="text/markdown"; title="Full LLM Context", </.well-known/ard.json>; rel="ard"; type="application/json"'
   );
 
   // Cross-Origin Isolation & Top-Level Context Isolation
