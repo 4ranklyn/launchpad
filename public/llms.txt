@@ -3,25 +3,19 @@
 > Official personal launchpad and portfolio of Jasson Franklyn Wang (handle: franklynical).
 > Product Manager, Builder, Computer Science graduate, and content creator.
 
-## Summary
-- Name: Jasson Franklyn Wang
-- Aliases: franklynical, Franklyn Wang, Jasson Wang
-- Role: Product Manager Intern at Privy
-- Education: Computer Science graduate; Bangkit Academy ML Apprentice & Capstone Product Manager (H2 2024)
-- Honors & Achievements:
-  - 1 of 7 Indonesian delegates for Google I/O 2026 in Mountain View
-  - Prototype presenter & Student Global Marketing Pitch Challenge Winner (Google I/O 2026)
-  - Google Student Ambassador 2nd gen, 1st cohort (2025) — 2x Content Grand Champion with highest engagement
-- Focus Areas: AI product development, LLM workflows, agentic architectures, Model Context Protocol (MCP), Retrieval-Augmented Generation (RAG), rapid prototyping, and video/visual media production.
-- Contact: jassonfranklyn@gmail.com
-- Canonical URL: https://franklyn.page
+## Summary & Profile
+- [Personal Launchpad](https://franklyn.page/): Interactive personal portfolio and profile of Jasson Franklyn Wang.
+- [Agentic Resource Discovery (ARD)](https://franklyn.page/.well-known/ard.json): Machine-readable ARD discovery manifest for agents and tools.
+- [Sitemap](https://franklyn.page/sitemap.xml): XML sitemap index for search engines and web crawlers.
 
 ## Verified Links
-- GitHub: https://github.com/4ranklyn
-- LinkedIn: https://linkedin.com/in/franklynical
-- Instagram: https://instagram.com/franklynical
-- Google Search: https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50
+- [GitHub](https://github.com/4ranklyn): Code repositories, personal projects, and open source development.
+- [LinkedIn](https://linkedin.com/in/franklynical): Professional experience, Product Manager internship at Privy, and recommendations.
+- [Instagram](https://instagram.com/franklynical): Visual media, creative storytelling, and community updates.
+- [Google Search](https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50): Knowledge panel and Google search results for Jasson Franklyn Wang.
 
-## Machine-Readable Resources
-- Agentic Resource Discovery (ARD): https://franklyn.page/.well-known/ard.json
-- Sitemap: https://franklyn.page/sitemap.xml
+## Honors & Background
+- [Google I/O 2026 Delegate](https://franklyn.page/): 1 of 7 Indonesian delegates to Mountain View; Student Global Marketing Pitch Challenge Winner.
+- [Google Student Ambassador](https://franklyn.page/): 2nd generation, 1st cohort (2025); 2x Content Grand Champion with highest engagement.
+- [Bangkit Academy](https://franklyn.page/): Machine Learning Apprentice and Capstone Product Manager (H2 2024).
+- [Email Contact](mailto:jassonfranklyn@gmail.com): Direct contact for inquiries, collaborations, and discussions.

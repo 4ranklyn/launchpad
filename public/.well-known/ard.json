@@ -1,61 +1,48 @@
 {
-  "$schema": "https://agentic.org/schemas/ard-v1.json",
-  "name": "Jasson Franklyn Wang — Personal Launchpad & Portfolio",
-  "description": "Agentic discovery manifest and resource index for Jasson Franklyn Wang (franklynical).",
-  "version": "1.0.0",
-  "canonical_url": "https://franklyn.page",
-  "agent_endpoints": {
-    "llms_txt": "https://franklyn.page/llms.txt",
-    "sitemap": "https://franklyn.page/sitemap.xml",
-    "ard": "https://franklyn.page/.well-known/ard.json"
-  },
-  "entity": {
-    "type": "Person",
-    "name": "Jasson Franklyn Wang",
-    "handle": "franklynical",
-    "title": "Product Manager & Builder",
-    "email": "jassonfranklyn@gmail.com",
-    "affiliation": "Privy",
-    "achievements": [
-      "1 of 7 Indonesian delegates for Google I/O 2026 (Mountain View)",
-      "Student Global Marketing Pitch Challenge Winner (Google I/O 2026)",
-      "Google Student Ambassador 2x Content Grand Champion (2025)",
-      "Bangkit Academy Machine Learning Apprentice & Capstone PM (H2 2024)"
-    ],
-    "social": {
-      "github": "https://github.com/4ranklyn",
-      "linkedin": "https://linkedin.com/in/franklynical",
-      "instagram": "https://instagram.com/franklynical",
-      "google_search": "https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50"
-    }
-  },
-  "capabilities": {
-    "content_negotiation": [
-      "text/html",
-      "text/plain",
-      "application/json",
-      "text/markdown"
-    ],
-    "supported_protocols": [
-      "HTTPS",
-      "MCP"
-    ],
-    "ai_friendly_format": "https://franklyn.page/llms.txt"
-  },
-  "resources": [
+  "$schema": "https://agenticresourcediscovery.org/schemas/ard-v1.json",
+  "specVersion": "1.0",
+  "entries": [
     {
-      "id": "portfolio-profile",
-      "name": "Personal Profile & Launchpad",
-      "uri": "https://franklyn.page/",
-      "mime_type": "text/html",
-      "description": "Interactive personal portfolio and launchpad."
+      "identifier": "urn:air:franklyn.page:profile:launchpad",
+      "displayName": "Jasson Franklyn Wang — Personal Launchpad",
+      "type": "text/html",
+      "url": "https://franklyn.page/",
+      "description": "Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager, builder, and Indonesian delegate for Google I/O 2026.",
+      "version": "1.0.0",
+      "tags": [
+        "portfolio",
+        "product-management",
+        "ai-builder",
+        "google-ambassador",
+        "franklynical"
+      ],
+      "capabilities": [
+        "profile-retrieval",
+        "contact",
+        "verified-links"
+      ],
+      "representativeQueries": [
+        "Who is Jasson Franklyn Wang?",
+        "Find franklynical personal portfolio and contact information.",
+        "What are Jasson Franklyn Wang's achievements and background in AI product management?"
+      ]
     },
     {
-      "id": "llms-txt",
-      "name": "LLMs Plaintext Context",
-      "uri": "https://franklyn.page/llms.txt",
-      "mime_type": "text/markdown",
-      "description": "Concise Markdown context formatted per /llms.txt standard for AI crawlers, agents, and LLMs."
+      "identifier": "urn:air:franklyn.page:docs:llms-txt",
+      "displayName": "LLMs Plaintext Context",
+      "type": "text/markdown",
+      "url": "https://franklyn.page/llms.txt",
+      "description": "Concise Markdown context formatted per the /llms.txt standard for AI crawlers, agents, and LLMs.",
+      "version": "1.0.0",
+      "tags": [
+        "llms-txt",
+        "agent-context",
+        "markdown"
+      ],
+      "representativeQueries": [
+        "Get LLM context for Jasson Franklyn Wang",
+        "Fetch summary of franklyn.page for language models"
+      ]
     }
   ]
 }
