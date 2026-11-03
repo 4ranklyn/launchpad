@@ -66,6 +66,12 @@ app.get('/llms.txt', (_req: Request, res: Response) => {
   res.sendFile(llmsPath);
 });
 
+const llmsFullPath = path.resolve(import.meta.dirname, 'public', 'llms-full.txt');
+app.get('/llms-full.txt', (_req: Request, res: Response) => {
+  res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+  res.sendFile(llmsFullPath);
+});
+
 async function startServer() {
   if (!isProduction) {
     const { createServer: createViteServer } = await import('vite');

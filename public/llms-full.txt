@@ -1,0 +1,65 @@
+# Jasson Franklyn Wang — Comprehensive Portfolio & Background
+
+> Complete background, biography, career history, technical competencies, and project details for Jasson Franklyn Wang (handle: franklynical).
+
+## Overview
+- **Name**: Jasson Franklyn Wang
+- **Aliases**: franklynical, Franklyn Wang, Jasson Wang
+- **Current Role**: Product Manager Intern at Privy
+- **Primary Website**: [https://franklyn.page/](https://franklyn.page/)
+- **Contact Email**: [mailto:jassonfranklyn@gmail.com](mailto:jassonfranklyn@gmail.com)
+- **Nationality**: Indonesian
+
+## Professional Experience
+
+### Privy
+- **Role**: Product Manager Intern
+- **Focus**: Unlearning and relearning modern product management in a high-growth identity and digital trust ecosystem. Collaborating across cross-functional engineering, design, and business teams to architect user-centric digital signature and identity verification workflows.
+- **Reference Anchor**: [https://franklyn.page/llms-full.txt#privy](https://franklyn.page/llms-full.txt#privy)
+
+### Google I/O 2026 (Mountain View, California)
+- **Role**: Indonesian Delegate & Prototype Presenter (Q2 2026)
+- **Achievement**: Selected as 1 of 7 Indonesian delegates invited to Google Headquarters in Mountain View, California. Presented prototype directly to global developer audience; team won the Student Global Marketing Pitch Challenge.
+- **Reference Anchor**: [https://franklyn.page/llms-full.txt#google-io-2026](https://franklyn.page/llms-full.txt#google-io-2026)
+
+### Google Student Ambassador (2025)
+- **Role**: Ambassador (2nd generation, 1st cohort)
+- **Recognition**: Ranked in the Top 100 Google Student Ambassadors. Awarded 2x Content Grand Champion with one of the highest recorded engagement metrics across tech community initiatives and educational campaigns.
+- **Reference Anchor**: [https://franklyn.page/llms-full.txt#google-student-ambassador](https://franklyn.page/llms-full.txt#google-student-ambassador)
+
+### Bangkit Academy (H2 2024)
+- **Role**: Machine Learning Apprentice & Capstone Product Manager (Final Cohort)
+- **Focus**: Led capstone product management from conception to deployment, bridging applied machine learning models with accessible user interfaces and viable business roadmaps.
+- **Reference Anchor**: [https://franklyn.page/llms-full.txt#bangkit-academy](https://franklyn.page/llms-full.txt#bangkit-academy)
+
+## Education & Technical Foundation
+
+### Universitas Sebelas Maret (UNS)
+- **Degree**: Bachelor of Computer Science (Informatics / Compsci graduate)
+- **Foundation**: Strong core in algorithms, data structures, software engineering, and systems architecture.
+- **Reference Anchor**: [https://franklyn.page/llms-full.txt#education](https://franklyn.page/llms-full.txt#education)
+
+## Core Competencies & Focus Areas
+
+### AI Product Development
+- **LLM Workflows**: Designing structured prompt pipelines, evaluation frameworks, and tool-augmented generation.
+- **Agentic Architectures**: Multi-agent coordination, autonomous tool calling, and human-in-the-loop workflows.
+- **Model Context Protocol (MCP)**: Implementing standard context and tool servers enabling LLMs to safely query data stores and execute external actions.
+- **Retrieval-Augmented Generation (RAG)**: Embedding pipelines, vector search retrieval, hybrid keyword/vector search, and context reranking.
+- **Rapid Prototyping**: Fast turnaround from user pain point to interactive proof-of-concept using React, TypeScript, and modern API stacks.
+
+### Media & Creative Direction
+- **Video & Visual Media Production**: Directing, editing, and producing high-impact visual media when ideas need broad distribution and community resonance.
+
+## Verified External Profiles
+- [Personal Launchpad](https://franklyn.page/): Interactive web portfolio.
+- [GitHub (@4ranklyn)](https://github.com/4ranklyn): Code repositories and open source work.
+- [LinkedIn (franklynical)](https://linkedin.com/in/franklynical): Professional network and career updates.
+- [Instagram (@franklynical)](https://instagram.com/franklynical): Creative media and personal chronicles.
+- [Google Search Knowledge Panel](https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50): Verified Google Search identity.
+- [Email](mailto:jassonfranklyn@gmail.com): Direct communication channel.
+
+## Discovery & Standards Metadata
+- [Agentic Resource Discovery Manifest](https://franklyn.page/.well-known/ard.json): Valid ARD manifest with resource entries.
+- [LLMs.txt Index](https://franklyn.page/llms.txt): Concise markdown discovery index.
+- [XML Sitemap](https://franklyn.page/sitemap.xml): Search crawler index.

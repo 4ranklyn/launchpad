@@ -4,22 +4,24 @@
   "entries": [
     {
       "identifier": "urn:air:franklyn.page:profile:launchpad",
-      "displayName": "Jasson Franklyn Wang — Personal Launchpad",
+      "displayName": "Jasson Franklyn Wang — Personal Launchpad & Portfolio",
       "type": "text/html",
       "url": "https://franklyn.page/",
-      "description": "Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager, builder, and Indonesian delegate for Google I/O 2026.",
+      "description": "Official personal launchpad and interactive portfolio of Jasson Franklyn Wang (franklynical). Product Manager intern at Privy, Indonesian delegate for Google I/O 2026, and Top 100 Google Student Ambassador.",
       "version": "1.0.0",
       "tags": [
         "portfolio",
         "product-management",
         "ai-builder",
         "google-ambassador",
-        "franklynical"
+        "franklynical",
+        "developer"
       ],
       "capabilities": [
         "profile-retrieval",
         "contact",
-        "verified-links"
+        "verified-links",
+        "portfolio-discovery"
       ],
       "representativeQueries": [
         "Who is Jasson Franklyn Wang?",
@@ -29,19 +31,39 @@
     },
     {
       "identifier": "urn:air:franklyn.page:docs:llms-txt",
-      "displayName": "LLMs Plaintext Context",
+      "displayName": "LLMs Plaintext Context Index",
       "type": "text/markdown",
       "url": "https://franklyn.page/llms.txt",
-      "description": "Concise Markdown context formatted per the /llms.txt standard for AI crawlers, agents, and LLMs.",
+      "description": "Structured Markdown link index formatted per the /llms.txt specification for AI crawlers, agents, and LLMs.",
       "version": "1.0.0",
       "tags": [
         "llms-txt",
         "agent-context",
-        "markdown"
+        "markdown",
+        "link-index"
       ],
       "representativeQueries": [
-        "Get LLM context for Jasson Franklyn Wang",
-        "Fetch summary of franklyn.page for language models"
+        "Get LLM context index for Jasson Franklyn Wang",
+        "Fetch llms.txt link index for franklyn.page"
+      ]
+    },
+    {
+      "identifier": "urn:air:franklyn.page:docs:llms-full-txt",
+      "displayName": "Comprehensive LLM Background & Biography",
+      "type": "text/markdown",
+      "url": "https://franklyn.page/llms-full.txt",
+      "description": "Complete biographical background, career milestones, technical competencies, and project portfolio documentation for LLM agents.",
+      "version": "1.0.0",
+      "tags": [
+        "llms-full-txt",
+        "comprehensive-bio",
+        "career-history",
+        "technical-skills"
+      ],
+      "representativeQueries": [
+        "Read complete biography and career history of Jasson Franklyn Wang",
+        "Tell me about Jasson Franklyn Wang's experience at Privy, Google I/O 2026, and Bangkit Academy",
+        "What are Jasson Franklyn Wang's technical skills in LLMs, MCP, and RAG?"
       ]
     }
   ]
