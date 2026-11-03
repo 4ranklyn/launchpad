@@ -14,7 +14,7 @@
   - Google Student Ambassador 2nd gen, 1st cohort (2025) — 2x Content Grand Champion with highest engagement
 - Focus Areas: AI product development, LLM workflows, agentic architectures, Model Context Protocol (MCP), Retrieval-Augmented Generation (RAG), rapid prototyping, and video/visual media production.
 - Contact: jassonfranklyn@gmail.com
-- Canonical URL: https://franklyn.ai.studio
+- Canonical URL: https://franklyn.page
 
 ## Verified Links
 - GitHub: https://github.com/4ranklyn
@@ -23,5 +23,5 @@
 - Google Search: https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50
 
 ## Machine-Readable Resources
-- Agentic Resource Discovery (ARD): https://franklyn.ai.studio/.well-known/ard.json
-- Sitemap: https://franklyn.ai.studio/sitemap.xml
+- Agentic Resource Discovery (ARD): https://franklyn.page/.well-known/ard.json
+- Sitemap: https://franklyn.page/sitemap.xml
