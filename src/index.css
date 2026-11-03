@@ -25,12 +25,12 @@
 @layer base {
   :root {
     font-family: 'Google Sans Flex', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 520;
+    font-weight: 460;
   }
 
   body {
     font-family: 'Google Sans Flex', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 520;
+    font-weight: 460;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     transition: background-color 0.25s ease, color 0.25s ease;
@@ -52,6 +52,8 @@
   padding: 0 4px;
   margin: 0 -2px;
   z-index: 1;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition: color 0.22s cubic-bezier(0.16, 1, 0.3, 1), text-decoration-color 0.15s ease;
 }
 
@@ -67,15 +69,61 @@
   transition: width 0.24s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.sliding-link:hover::before,
-.sliding-link:focus-visible::before {
+.sliding-link:focus-visible::before,
+.sliding-link.active::before {
   width: 100%;
 }
 
-.sliding-link:hover,
-.sliding-link:focus-visible {
+.sliding-link:focus-visible,
+.sliding-link.active {
   color: var(--link-invert-text);
   text-decoration-color: transparent;
+}
+
+.social-anchor {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.floating-social-tray {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px) scale(0.96);
+  transform-origin: bottom center;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 50;
+  padding-bottom: 10px;
+  width: max-content;
+  max-width: calc(100vw - 32px);
+}
+
+.floating-social-tray.is-open {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) scale(1) !important;
+  pointer-events: auto !important;
+}
+
+@media (hover: hover) {
+  .sliding-link:hover::before,
+  .group:hover .sliding-link::before {
+    width: 100%;
+  }
+
+  .sliding-link:hover,
+  .group:hover .sliding-link {
+    color: var(--link-invert-text);
+    text-decoration-color: transparent;
+  }
+
+  .group:hover .floating-social-tray {
+    opacity: 1 !important;
+    transform: translateX(-50%) translateY(0) scale(1) !important;
+    pointer-events: auto !important;
+  }
 }
 
 .sliding-link:focus-visible {
