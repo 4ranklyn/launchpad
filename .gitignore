@@ -6,3 +6,19 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# AI Studio internal artifacts & chat assets
+.aistudio/
+**/.aistudio/**
+public/assets/aistudio/
+**/assets/aistudio/**
+chat_assets/
+chat-assets/
+
+# Implementation plans & planning artifacts
+*implementation_plan*
+implementation_plan.md*
+*implementation*.md
+*.md.metadata.json
+*.metadata.json
+!metadata.json
