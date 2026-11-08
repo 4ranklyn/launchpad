@@ -1,28 +1,20 @@
-# Multi-stage production build for Google Cloud Run
-# Stage 1: Build the static application
-FROM oven/bun:1-alpine AS builder
-
+FROM node:22-alpine AS build
 WORKDIR /app
 
-COPY package.json bun.lock* ./
-RUN bun install --frozen-lockfile
+COPY package*.json ./
+RUN npm install
 
 COPY . .
-RUN bun run build
+RUN npm run build
 
-# Stage 2: Minimal production container
-FROM oven/bun:1-alpine AS runner
-
+FROM node:22-alpine AS runtime
 WORKDIR /app
-ENV NODE_ENV=production
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package.json ./package.json
+
+ENV HOST=0.0.0.0
 ENV PORT=8080
-
-COPY package.json bun.lock* ./
-RUN bun install --production --frozen-lockfile
-
-COPY --from=builder /app/dist ./dist
-COPY server.mjs ./
-
 EXPOSE 8080
 
-CMD ["bun", "run", "server.mjs"]
+CMD ["node", "./dist/server/entry.mjs"]

@@ -2,6 +2,8 @@
 import '../../index.css';
 import { thoughts, type ThoughtEntry } from '../../data/thoughts';
 
+export const prerender = true;
+
 export function getStaticPaths() {
   return thoughts.map((thought, index) => {
     const nextThought = thoughts[(index + 1) % thoughts.length];
