@@ -1,0 +1,192 @@
+---
+import '../../index.css';
+import { thoughts, type ThoughtEntry } from '../../data/thoughts';
+
+export function getStaticPaths() {
+  return thoughts.map((thought, index) => {
+    const nextThought = thoughts[(index + 1) % thoughts.length];
+    const prevThought = thoughts[(index - 1 + thoughts.length) % thoughts.length];
+    return {
+      params: { slug: thought.slug },
+      props: { thought, nextThought, prevThought },
+    };
+  });
+}
+
+interface Props {
+  thought: ThoughtEntry;
+  nextThought: ThoughtEntry;
+  prevThought: ThoughtEntry;
+}
+
+const { thought, nextThought } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{thought.title} · jasson franklyn wang</title>
+    <meta name="description" content={thought.summary} />
+    <meta name="author" content="Jasson Franklyn Wang" />
+    <link rel="canonical" href={`https://franklyn.page/thoughts/${thought.slug}`} />
+
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="the frank's launchpad" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={`${thought.title} · jasson franklyn wang`} />
+    <meta property="og:description" content={thought.summary} />
+    <meta property="og:url" content={`https://franklyn.page/thoughts/${thought.slug}`} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`${thought.title} · jasson franklyn wang`} />
+    <meta name="twitter:description" content={thought.summary} />
+
+    <!-- Google Sans Flex Full Multi-Axis Variable Delivery -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght@6..144,-10..0,25..151,100..1000&display=swap"
+    />
+
+    <!-- Schema.org BlogPosting / Article JSON-LD for AEO & Semantic Search -->
+    <script type="application/ld+json" is:inline set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": `https://franklyn.page/thoughts/${thought.slug}#article`,
+      "headline": thought.title,
+      "description": thought.summary,
+      "datePublished": "2026-10-01",
+      "dateModified": "2026-11-08",
+      "author": {
+        "@type": "Person",
+        "@id": "https://franklyn.page/#person",
+        "name": "Jasson Franklyn Wang",
+        "url": "https://franklyn.page/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Jasson Franklyn Wang",
+        "url": "https://franklyn.page/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://franklyn.page/thoughts/${thought.slug}`
+      },
+      "url": `https://franklyn.page/thoughts/${thought.slug}`
+    })} />
+  </head>
+  <body class="antialiased body-prose">
+    <main class="min-h-screen px-6 sm:px-10 pt-10 sm:pt-14 md:pt-16 pb-16 sm:pb-24 flex flex-col justify-between">
+      <article class="max-w-2xl mx-auto w-full space-y-10 sm:space-y-12">
+        
+        <!-- Breadcrumb Navigation (Static typography, no sliding animation) -->
+        <nav class="flex items-center gap-3 text-sm text-[var(--text-secondary)]">
+          <a
+            href="/"
+            class="hover:text-[var(--text-primary)] transition-colors"
+          >
+            ← launchpad
+          </a>
+          <span class="opacity-30">/</span>
+          <a
+            href="/thoughts"
+            class="hover:text-[var(--text-primary)] transition-colors"
+          >
+            thoughts
+          </a>
+        </nav>
+
+        <!-- Article Header -->
+        <header class="space-y-4 pt-2">
+          <div class="flex items-center gap-2">
+            <span class="metadata-tag text-[var(--text-secondary)]">{thought.category}</span>
+            <span class="text-[var(--text-secondary)] opacity-40">·</span>
+            <span class="metadata-tag text-[var(--text-secondary)]">{thought.date}</span>
+            <span class="text-[var(--text-secondary)] opacity-40">·</span>
+            <span class="metadata-tag text-[var(--text-secondary)] opacity-80">{thought.readTime}</span>
+          </div>
+
+          <div class="flex items-start justify-between gap-4">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[var(--text-primary)] leading-[1.15]">
+              {thought.title}
+            </h1>
+            {thought.externalUrl && (
+              <a
+                href={thought.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open original publication"
+                aria-label="Open original publication"
+                class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-transform hover:scale-110 shrink-0 pt-2"
+              >
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            )}
+          </div>
+        </header>
+
+        <!-- Article Content -->
+        <section class="space-y-6 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.75] text-[var(--text-primary)] font-[460] pt-2">
+          {thought.contentBlocks ? (
+            thought.contentBlocks.map((block) => {
+              if (block.type === 'h2') {
+                return (
+                  <h2 class="text-2xl sm:text-3xl font-medium tracking-tight text-[var(--text-primary)] pt-8 pb-1">
+                    {block.text}
+                  </h2>
+                );
+              }
+              if (block.type === 'h3') {
+                return (
+                  <h3 class="text-xl sm:text-2xl font-medium tracking-tight text-[var(--text-primary)] pt-5 pb-0.5">
+                    {block.text}
+                  </h3>
+                );
+              }
+              if (block.type === 'blockquote') {
+                return (
+                  <blockquote class="editorial-slant pl-4 border-l-2 border-black/25 dark:border-white/30 text-base sm:text-lg my-6 text-[var(--text-secondary)] leading-relaxed">
+                    {block.text}
+                  </blockquote>
+                );
+              }
+              return <p>{block.text}</p>;
+            })
+          ) : (
+            thought.paragraphs.map((para) => (
+              <p>{para}</p>
+            ))
+          )}
+        </section>
+
+        <!-- Post Footer & Up Next -->
+        <footer class="pt-10 border-t border-black/10 dark:border-white/15">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-sm">
+            <a
+              href="/thoughts"
+              class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+            >
+              ← back to all thoughts
+            </a>
+
+            {nextThought && nextThought.slug !== thought.slug && (
+              <a
+                href={`/thoughts/${nextThought.slug}`}
+                class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors text-right"
+              >
+                next: {nextThought.title} →
+              </a>
+            )}
+          </div>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

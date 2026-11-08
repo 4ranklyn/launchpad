@@ -26,11 +26,14 @@
   :root {
     font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-weight: 460;
+    font-variation-settings: 'wght' 460, 'wdth' 100, 'opsz' 15;
   }
 
   body {
     font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-weight: 460;
+    font-variation-settings: 'wght' 460, 'wdth' 100, 'opsz' 15;
+    line-height: 1.65;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     transition: background-color 0.25s ease, color 0.25s ease;
@@ -42,19 +45,83 @@
   }
 }
 
+/* 1. Hero Title / Wordmark: Massive, Sculptural, Architectural */
+.hero-wordmark {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 850;
+  font-variation-settings: 'wght' 850, 'wdth' 125, 'opsz' 72;
+  letter-spacing: -0.04em;
+}
+
+/* 2. Metadata & Section Tags: Runway Lookbook / Technical Spec-Sheet */
+.metadata-tag {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  font-variation-settings: 'wght' 500, 'wdth' 90, 'opsz' 11;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.role-tag {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 500;
+  font-variation-settings: 'wght' 500, 'wdth' 95, 'opsz' 16;
+  letter-spacing: -0.01em;
+}
+
+/* 3. Body & Essays: Pure Effortless Reading Clarity */
+.body-prose {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  font-variation-settings: 'wght' 400, 'wdth' 100, 'opsz' 15;
+  line-height: 1.65;
+}
+
+/* 4. Emphasis / Kinetic Editorial Accent: Slanted Light */
+.editorial-slant {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+  font-style: oblique 10deg;
+  font-variation-settings: 'slnt' -10, 'wght' 300, 'wdth' 100, 'opsz' 16;
+  letter-spacing: -0.01em;
+}
+
+/* 5. Sliding Underline for Builds & Thoughts (Tight, Snappy Baseline Hug Across Multi-Line Wraps) */
+.sliding-underline {
+  display: inline;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 calc(100% - 2px);
+  background-repeat: no-repeat;
+  background-size: 0% 1.25px;
+  transition: background-size 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.group:hover .sliding-underline,
+.group:focus-within .sliding-underline,
+.group.is-expanded .sliding-underline,
+.sliding-underline:hover,
+.sliding-underline:focus-visible {
+  background-size: 100% 1.25px;
+}
+
+/* Fluid Sliding Highlight Effect */
 .sliding-link {
   position: relative;
   display: inline-block;
   color: var(--text-primary);
   text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1.5px;
-  padding: 0 4px;
-  margin: 0 -2px;
+  text-underline-offset: 2.5px;
+  text-decoration-thickness: 1.25px;
+  padding: 0 2px;
+  margin: 0 -1px;
   z-index: 1;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
-  transition: color 0.22s cubic-bezier(0.16, 1, 0.3, 1), text-decoration-color 0.15s ease;
+  transition: color 0.24s cubic-bezier(0.16, 1, 0.3, 1), text-decoration-color 0.24s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .sliding-link::before {
@@ -80,33 +147,6 @@
   text-decoration-color: transparent;
 }
 
-.social-anchor {
-  position: relative;
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-.floating-social-tray {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(4px) scale(0.96);
-  transform-origin: bottom center;
-  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  pointer-events: none;
-  opacity: 0;
-  z-index: 50;
-  padding-bottom: 10px;
-  width: max-content;
-  max-width: calc(100vw - 32px);
-}
-
-.floating-social-tray.is-open {
-  opacity: 1 !important;
-  transform: translateX(-50%) translateY(0) scale(1) !important;
-  pointer-events: auto !important;
-}
-
 @media (hover: hover) {
   .sliding-link:hover::before,
   .group:hover .sliding-link::before {
@@ -118,15 +158,74 @@
     color: var(--link-invert-text);
     text-decoration-color: transparent;
   }
-
-  .group:hover .floating-social-tray {
-    opacity: 1 !important;
-    transform: translateX(-50%) translateY(0) scale(1) !important;
-    pointer-events: auto !important;
-  }
 }
 
 .sliding-link:focus-visible {
   outline: 2px solid var(--text-primary);
   outline-offset: 3px;
+}
+
+/* Social Tray Pop-up: Seamless Hit Bridge, Stays Visible & Active while Approaching Icons */
+.wordmark-social-tray {
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+  padding-top: 8px; /* Hit area bridge connecting trigger to popup with zero dead gap */
+  transform: translateY(-4px) scale(0.96);
+  transform-origin: top left;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 50;
+  transition: opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1), transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.wordmark-social-tray::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+.wordmark-social-tray.is-open {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+@media (hover: hover) {
+  .group:hover .wordmark-social-tray {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateY(0) scale(1) !important;
+  }
+}
+
+/* Unboxed Expandable Drawer Transition */
+.expandable-drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  opacity: 0;
+}
+
+/* On desktop, expand strictly on hover so clicking does not leave it stuck open */
+@media (hover: hover) {
+  .group:hover .expandable-drawer {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+}
+
+/* On touch/mobile devices without pointer hover, tap toggles .is-expanded */
+@media (hover: none) {
+  .group.is-expanded .expandable-drawer {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+}
+
+.expandable-drawer-inner {
+  overflow: hidden;
 }

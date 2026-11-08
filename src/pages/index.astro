@@ -1,0 +1,760 @@
+---
+import '../index.css';
+
+const currentYear = new Date().getFullYear();
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script is:inline>
+      (function() {
+        try {
+          var _f = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return _f; },
+            set: function(val) { _f = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (_) {}
+      })();
+    </script>
+    <title>jasson franklyn wang (personal site launchpad)</title>
+    <meta
+      name="description"
+      content="Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy, UNS Computer Science graduate, and Indonesian delegate for Google I/O 2026 in Mountain View."
+    />
+    <meta name="author" content="Jasson Franklyn Wang" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta
+      name="keywords"
+      content="Jasson Franklyn Wang, Jasson Wang, franklynical, Product Manager Privy, Google Ambassador Indonesia, Google IO 2026, Universitas Sebelas Maret, the frank's launchpad"
+    />
+
+    <!-- OpenGraph (Social & Search Indexing) -->
+    <meta property="og:site_name" content="the frank's launchpad" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="jasson franklyn wang (personal site launchpad)" />
+    <meta
+      property="og:description"
+      content="Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy and Indonesian delegate for Google I/O 2026."
+    />
+    <meta property="profile:first_name" content="Jasson" />
+    <meta property="profile:last_name" content="Wang" />
+    <meta property="profile:username" content="franklynical" />
+    <meta property="og:url" content="https://franklyn.page/" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="jasson franklyn wang (personal site launchpad)" />
+    <meta
+      name="twitter:description"
+      content="Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy and Indonesian delegate for Google I/O 2026."
+    />
+
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https:; base-uri 'self'; form-action 'self';"
+    />
+
+    <!-- Agentic & LLM Resource Discovery -->
+    <link rel="ard" href="/.well-known/ard.json" type="application/json" />
+    <link rel="llms-txt" href="/llms.txt" />
+    <link rel="alternate" type="application/json" href="/.well-known/ard.json" title="Agentic Resource Discovery (ARD)" />
+    <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Context Index" />
+    <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="Full LLM Documentation" />
+
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Google Sans Flex Full Multi-Axis Variable Delivery (opsz, slnt, wdth, wght) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght@6..144,-10..0,25..151,100..1000&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght@6..144,-10..0,25..151,100..1000&display=swap"
+    />
+
+    <link rel="canonical" href="https://franklyn.page/" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://franklyn.page/#webpage",
+          "url": "https://franklyn.page/",
+          "name": "jasson franklyn wang (personal site launchpad)",
+          "description": "Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical).",
+          "dateModified": "2026-11-08",
+          "mainEntity": {
+            "@id": "https://franklyn.page/#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://franklyn.page/#person",
+          "name": "Jasson Franklyn Wang",
+          "givenName": "Jasson",
+          "additionalName": "Franklyn",
+          "familyName": "Wang",
+          "alternateName": ["franklynical", "Franklyn Wang", "Jasson Wang", "Frank"],
+          "url": "https://franklyn.page/",
+          "description": "Product Manager Intern at Privy, Computer Science graduate from Universitas Sebelas Maret (UNS), Indonesian delegate at Google I/O 2026 in Mountain View, and 2x Google Student Ambassador Content Grand Champion.",
+          "jobTitle": "Product Manager Intern",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Privy (PT Privy Identitas Digital)",
+            "url": "https://privy.id"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universitas Sebelas Maret",
+            "url": "https://uns.ac.id"
+          },
+          "knowsAbout": [
+            "Product Management",
+            "Agentic AI",
+            "Generative AI",
+            "Large Language Models",
+            "Multi-Agent Architectures",
+            "Gemini API",
+            "Full-Stack Prototyping",
+            "Computer Science"
+          ],
+          "email": "mailto:jassonfranklyn@gmail.com",
+          "sameAs": [
+            "https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50",
+            "https://github.com/4ranklyn",
+            "https://instagram.com/franklynical",
+            "https://linkedin.com/in/franklynical"
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="antialiased body-prose">
+    <main class="min-h-screen px-6 sm:px-10 pt-10 sm:pt-14 md:pt-16 pb-16 sm:pb-24 flex flex-col justify-between">
+      <article class="max-w-2xl mx-auto w-full space-y-14 sm:space-y-16 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.65]">
+        
+        <!-- STOP 1: WORDMARK AND HOOK -->
+        <header id="overview" class="space-y-6 sm:space-y-8">
+          <p class="editorial-slant text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+            hello, i am
+          </p>
+
+          <div class="relative inline-block group pt-1 pb-1" id="wordmark-anchor">
+            <h1 class="inline m-0 p-0 text-inherit font-inherit">
+              <span
+                id="social-trigger"
+                role="button"
+                tabindex="0"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                class="sliding-link hero-wordmark cursor-pointer select-text text-5xl sm:text-6xl md:text-7xl lg:text-[5rem] leading-[1.12] lowercase inline-block"
+              >
+                jasson franklyn wang
+              </span>
+            </h1>
+
+            <!-- Social Tray: Pops Up Below the Name with Fluid Sliding Logic -->
+            <div
+              id="social-tray"
+              role="tooltip"
+              class="wordmark-social-tray"
+            >
+              <span
+                style={{
+                  backgroundColor: 'var(--link-invert-bg)',
+                  color: 'var(--link-invert-text)',
+                }}
+                class="inline-flex items-center gap-3.5 px-4 py-2 shadow-xl border border-black/10 dark:border-white/15 whitespace-nowrap"
+              >
+                <!-- Instagram -->
+                <a
+                  href="https://instagram.com/franklynical"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram (@franklynical)"
+                  title="Instagram (@franklynical)"
+                  class="opacity-95 hover:opacity-100 transition-opacity p-1 inline-flex items-center text-inherit hover:scale-105 transform duration-150"
+                >
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                  </svg>
+                </a>
+
+                <span class="w-px h-4 opacity-25" style={{ backgroundColor: 'var(--link-invert-text)' }}></span>
+
+                <!-- GitHub -->
+                <a
+                  href="https://github.com/4ranklyn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub (@4ranklyn)"
+                  title="GitHub (@4ranklyn)"
+                  class="opacity-95 hover:opacity-100 transition-opacity p-1 inline-flex items-center text-inherit hover:scale-105 transform duration-150"
+                >
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                </a>
+
+                <span class="w-px h-4 opacity-25" style={{ backgroundColor: 'var(--link-invert-text)' }}></span>
+
+                <!-- LinkedIn -->
+                <a
+                  href="https://linkedin.com/in/franklynical"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn (franklynical)"
+                  title="LinkedIn (franklynical)"
+                  class="opacity-95 hover:opacity-100 transition-opacity p-1 inline-flex items-center text-inherit hover:scale-105 transform duration-150"
+                >
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.65 1.65 0 1 0-.01-3.3 1.65 1.65 0 0 0 .01 3.3m1.4 9.74V9.93H5.06v8.57h2.8z"/>
+                  </svg>
+                </a>
+
+                <span class="w-px h-4 opacity-25" style={{ backgroundColor: 'var(--link-invert-text)' }}></span>
+
+                <!-- Google Search -->
+                <a
+                  href="https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Google Search: jasson franklyn wang"
+                  title="Google Search"
+                  class="opacity-95 hover:opacity-100 transition-opacity p-1 inline-flex items-center text-inherit hover:scale-105 transform duration-150"
+                >
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/>
+                    <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+
+          <p class="text-sm sm:text-base text-[var(--text-secondary)] font-normal tracking-tight leading-relaxed">
+            product manager, agentic builder, emerging creator.
+          </p>
+        </header>
+
+
+        <!-- STOP 2: CREDENTIALS (UNBOXED) -->
+        <section id="credentials" aria-label="Credentials" class="space-y-4">
+          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+            what i do (and did)
+          </h2>
+
+          <div class="space-y-2.5">
+            <!-- Privy -->
+            <div class="group cursor-pointer py-1">
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <div class="flex items-baseline gap-2">
+                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    Privy
+                  </span>
+                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                    Product Manager Intern
+                  </span>
+                </div>
+                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                  Sep 26 - Present
+                </span>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Authoring production-grade PRDs and executing product discovery within digital trust and electronic identity verification ecosystems. Audited 17+ UX journeys across core workflows to map friction and usability gaps, currently leading product discovery to drive feature adoption across cross-functional engineering, design, and business teams.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google -->
+            <div class="group cursor-pointer py-1">
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <div class="flex items-baseline gap-2">
+                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    Google
+                  </span>
+                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                    Student Ambassador &amp; I/O Delegate
+                  </span>
+                </div>
+                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                  Sep 25 - Jun 26
+                </span>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Selected as 1 of 7 national delegates from 800+ candidates (0.875% acceptance rate) to represent Indonesia at Google I/O 2026 in Mountain View, pitching the winning GTM campaign in the global Dragons&apos; Den challenge for Gemini back-to-school activation. Upskilled 100+ developers across 6+ technical AI workshops, co-curated webinars with Google for Education, and generated 180K+ developer impressions as a 2x National Grand Champion.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- UNS Hospital -->
+            <div class="group cursor-pointer py-1">
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <div class="flex items-baseline gap-2">
+                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    UNS Hospital
+                  </span>
+                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                    Project Management Intern
+                  </span>
+                </div>
+                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                  Apr 25 - Dec 25
+                </span>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Constructed a prioritized 4-phase MVP roadmap across 15+ clinical workflows by conducting structured user discovery with 7 clinical department heads, securing 100% stakeholder sign-off. Co-managed 8 two-week Agile sprints across a 5-engineer squad (100% on-time milestone delivery, ~25% scope creep reduction) and engineered Telegram webhooks with standardized database logic, cutting ticketing latency by 30% and saving 10-15 manual staff hours weekly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bangkit Academy -->
+            <div class="group cursor-pointer py-1">
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <div class="flex items-baseline gap-2">
+                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    Bangkit Academy
+                  </span>
+                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                    Capstone PM Lead &amp; ML Apprentice
+                  </span>
+                </div>
+                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                  Sep 24 - Dec 24
+                </span>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Directed a 6-engineer cross-functional squad across ML, Cloud, and Mobile tracks to ship CeKulit&apos;s skin diagnostic MVP 100% on schedule within an 8-week gate. Authored the product PRD and commercialization roadmap across 3 B2B revenue pathways and 4-tier daily gamification retention loops (earning a 92.5/100 capstone jury score), while architecting unified REST APIs and Cloud Flask inference maintaining sub-$1/day operational COGS with 84%+ CNN accuracy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- WHAT I STUDIED -->
+        <section id="education" aria-label="Education" class="space-y-4">
+          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+            what i studied
+          </h2>
+
+          <div class="space-y-2.5">
+            <!-- Universitas Sebelas Maret -->
+            <div class="group cursor-pointer py-1">
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <div class="flex items-baseline gap-2">
+                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    Universitas Sebelas Maret
+                  </span>
+                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                    B.Cs. (S.Kom.), Computer Science
+                  </span>
+                </div>
+                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                  Aug 22 - Apr 26
+                </span>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Graduated with a 3.67 GPA in Computer Science (Informatics Major, Humanized System Minor). Rigorous coursework across Systems Analysis &amp; Design, IT Project Management, Software Engineering, and AI/ML, culminating in an undergraduate thesis on <span class="editorial-slant">Swin Transformer and IndoBARTv2 on Indonesian Image Captioning</span>. Also served as Teaching Assistant for Data Structures and Algorithms in C++.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- WHAT I ACHIEVED -->
+        <section id="achievements" aria-label="Achievements" class="space-y-4">
+          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+            what i achieved
+          </h2>
+
+          <div class="space-y-4">
+            <!-- Awards -->
+            <div class="group py-1">
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <div class="flex items-baseline gap-2">
+                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    Awards
+                  </span>
+                </div>
+                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                  2024 - 2026
+                </span>
+              </div>
+              <div class="pt-2 pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                <ul class="space-y-1.5 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed list-disc list-outside ml-4">
+                  <li>Samsung Galaxy Campus National Champion (Fully Funded Delegation to Vietnam)</li>
+                  <li>Google I/O 2026 Students&apos; Dragons&apos; Den Winner (Global Marketing Pitch Challenge)</li>
+                  <li>1 of 12 Google AI Content Grand Champions</li>
+                  <li>1 of 6 Gemini Ramadan Content Champion</li>
+                  <li>Gemini Master Challenge Awardee</li>
+                  <li>1 of 3 Runner-Ups in #AutomateYourFuture Content Challenge</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="group py-1">
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <div class="flex items-baseline gap-2">
+                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    Certifications
+                  </span>
+                </div>
+                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                  2024 - 2026
+                </span>
+              </div>
+              <div class="pt-2 pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                <ul class="space-y-1.5 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed list-disc list-outside ml-4">
+                  <li>Google Project Management Professional Certificate (Google Skills)</li>
+                  <li>DeepLearning.AI Machine Learning Specialization</li>
+                  <li>DeepLearning.AI TensorFlow Developer Professional Certificate</li>
+                  <li>DeepLearning.AI Structuring Machine Learning Projects</li>
+                  <li>5-Day AI Agents Intensive with Google</li>
+                  <li>Gemini Certified Student &amp; Educator</li>
+                  <li>McKinsey Forward Program (McKinsey &amp; Company)</li>
+                  <li>Aspire Leaders Program Fellow (Aspire Institute)</li>
+                  <li>22+ Google Cloud Skill Badges including Deploy Multi-Agent Architectures, Vertex AI Gemini API, Cloud Run Serverless, BigQuery ML, Multimodal Vector Search &amp; RAG, Cloud Security, and Document AI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- STOP 3: BUILDS (UNBOXED) -->
+        <section id="builds" aria-label="Builds" class="space-y-4">
+          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+            what i have built
+          </h2>
+
+          <div class="space-y-3">
+            <!-- WriteFrankly -->
+            <div class="group cursor-pointer py-1">
+              <a
+                href="https://writefrankly.ai.studio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+              >
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                      <span class="sliding-underline">WriteFrankly</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+                        ↗
+                      </span>
+                    </h3>
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Aug 2026</span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Aug 2026</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini API</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Run</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Next.js</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TypeScript</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Firebase</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Web Crypto</span>
+                  </div>
+                </div>
+                <div class="expandable-drawer">
+                  <div class="expandable-drawer-inner">
+                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                      Private journaling companion for unvarnished reflection without performance or fear of consequence. Engineered dynamic Gemini API dialogue flows with in-RAM PII masking, Web Crypto AES-GCM 256-bit encryption at rest, and instant onboarding on Cloud Run with zero data loss.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- MakanSini 2.0 -->
+            <div class="group cursor-pointer py-1">
+              <a
+                href="https://github.com/4ranklyn/MakanSiniv2"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+              >
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                      <span class="sliding-underline">MakanSini 2.0</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+                        ↗
+                      </span>
+                    </h3>
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">May 2026</span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">May 2026</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini API</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Google Places API</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Run</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Go</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">React</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Docker</span>
+                  </div>
+                </div>
+                <div class="expandable-drawer">
+                  <div class="expandable-drawer-inner">
+                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                      Mapped user story journeys to ship a cross-platform culinary intelligence MVP in 7 days. Integrated Gemini and Google Places APIs on Cloud Run with strict prompt-injection defenses and sub-400ms p95 latency; presented live at Google I/O 2026 (Mountain View) as student global marketing pitch champion.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- VeraGate -->
+            <div class="group cursor-pointer py-1">
+              <a
+                href="https://github.com/4ranklyn/veragate"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+              >
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                      <span class="sliding-underline">VeraGate</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+                        ↗
+                      </span>
+                    </h3>
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Feb 2026</span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Feb 2026</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini 3</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Multi-Agent Systems</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Next.js</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TypeScript</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Docker</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">SSE</span>
+                  </div>
+                </div>
+                <div class="expandable-drawer">
+                  <div class="expandable-drawer-inner">
+                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                      Architected an autonomous multimodal forensic audit engine leveraging Gemini 3 (Watcher &amp; Auditor dual-agent architecture) to detect spatial, temporal, and specification contradictions between video evidence and technical PDF documentation, streaming real-time reasoning logs via Server-Sent Events.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- CeKulit -->
+            <div class="group cursor-pointer py-1">
+              <a
+                href="https://github.com/4ranklyn/cekulit-ml"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+              >
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                      <span class="sliding-underline">CeKulit</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+                        ↗
+                      </span>
+                    </h3>
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Sep 24 - Dec 24</span>
+                  </div>
+                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Sep 24 - Dec 24</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TensorFlow</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Flask API</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Google Cloud</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Mobile</span>
+                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Python</span>
+                  </div>
+                </div>
+                <div class="expandable-drawer">
+                  <div class="expandable-drawer-inner">
+                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                      Directed a 6-engineer cross-functional squad across ML, Cloud, and Mobile tracks to deliver an AI skin diagnostic MVP on schedule. Designed unified REST API contracts and schema mapping conditions to ingredients while optimizing TensorFlow CNN models (84%+ accuracy) deployed to Cloud Flask API with sub-$1/day COGS (92.5/100 jury score).
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- STOP 4: THOUGHT STATION (UNBOXED) -->
+        <section id="thought-station" aria-label="Thought Station" class="space-y-4">
+          <div class="space-y-0.5">
+            <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+              my thoughts
+            </h2>
+            <p class="editorial-slant text-sm sm:text-base text-[var(--text-secondary)]">
+              (experience, public phenomenon, etc)
+            </p>
+          </div>
+
+          <div class="space-y-3">
+            <article class="group cursor-pointer py-1">
+              <a href="/thoughts/what-mountain-view-taught-me-google-io-2026" class="block">
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                  <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                    <span class="sliding-underline">Memo from The Valley: When Young Local Ambition Met the Core of All Tech</span>
+                  </h3>
+                  <div class="flex items-center gap-2 shrink-0">
+                    <span class="metadata-tag text-[var(--text-secondary)]">Memo · Oct 2026</span>
+                  </div>
+                </div>
+                <div class="expandable-drawer">
+                  <div class="expandable-drawer-inner">
+                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                      It has been a while since I lived a short life in Mountain View, California. Travelling 20,000 miles to witness the future of agentic AI, and navigating what happens when the high Valley meets steep local reality.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Redirect Link to Thoughts Station Archive -->
+            <div class="pt-3">
+              <a
+                href="/thoughts"
+                class="group text-sm sm:text-base text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors inline-block"
+              >
+                <span class="sliding-underline">read all thoughts &amp; perspectives</span>
+                <span class="inline-block group-hover:translate-x-0.5 transition-transform duration-200 ml-1.5">→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- CONTACT & SIGN-OFF -->
+        <section id="contact" aria-label="Contact" class="pt-4 border-t border-black/10 dark:border-white/15">
+          <p class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.65]">
+            anything to talk?
+            <br />
+            send to{' '}
+            <a
+              href="mailto:jassonfranklyn@gmail.com"
+              class="sliding-link"
+            >
+              mail
+            </a>
+            .
+          </p>
+
+          <div class="pt-4 text-sm sm:text-base">
+            <p class="text-neutral-900 dark:text-white font-medium">
+              thanks for visiting my launchpad personal site!
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <footer class="max-w-2xl mx-auto w-full pt-14 sm:pt-20 text-xs text-[var(--text-secondary)] select-none">
+        <p class="metadata-tag opacity-75">the frank&apos;s launchpad · {currentYear}</p>
+      </footer>
+    </main>
+
+    <!-- Client Script: Wordmark Social Tray & Natural Mobile Touch Expansion -->
+    <script>
+      // Wordmark Social Tray Hover / Click logic
+      const anchor = document.getElementById('wordmark-anchor');
+      const tray = document.getElementById('social-tray');
+      const trigger = document.getElementById('social-trigger');
+
+      if (anchor && tray && trigger) {
+        let timer: number | null = null;
+        let isOpen = false;
+
+        const setOpen = (open: boolean) => {
+          isOpen = open;
+          if (open) {
+            tray.classList.add('is-open');
+            trigger.classList.add('active');
+            trigger.setAttribute('aria-expanded', 'true');
+          } else {
+            tray.classList.remove('is-open');
+            trigger.classList.remove('active');
+            trigger.setAttribute('aria-expanded', 'false');
+          }
+        };
+
+        const openBar = () => {
+          setOpen(true);
+        };
+
+        const closeBar = () => {
+          setOpen(false);
+        };
+
+        anchor.addEventListener('mouseenter', openBar);
+        anchor.addEventListener('mouseleave', closeBar);
+
+        trigger.addEventListener('click', (e) => {
+          const selection = window.getSelection();
+          if (selection && selection.toString().trim().length > 0) return;
+          e.stopPropagation();
+          setOpen(!isOpen);
+        });
+
+        trigger.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            setOpen(!isOpen);
+          }
+        });
+
+        document.addEventListener('pointerdown', (e) => {
+          if (!isOpen) return;
+          if (!anchor.contains(e.target as Node)) {
+            setOpen(false);
+          }
+        });
+      }
+
+      // Touch / Mobile-only tap to toggle expansion
+      if (window.matchMedia('(hover: none)').matches) {
+        const touchGroups = document.querySelectorAll('.group');
+        touchGroups.forEach((item) => {
+          item.addEventListener('click', () => {
+            item.classList.toggle('is-expanded');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
