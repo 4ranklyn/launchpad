@@ -1,6 +1,10 @@
 {
   "name": "Jasson Franklyn Wang — Personal Launchpad & Portfolio",
-  "description": "Official personal launchpad and portfolio of Jasson Franklyn Wang. Google Ambassador who represented Indonesia to Google I/O.",
+  "description": "Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy, Computer Science graduate from Universitas Sebelas Maret (UNS), and Indonesian delegate for Google I/O 2026 in Mountain View.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API",
+    "AGENTIC_RESOURCE_DISCOVERY",
+    "LLM_PLAINTEXT_INDEX"
+  ]
 }

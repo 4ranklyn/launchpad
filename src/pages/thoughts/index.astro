@@ -12,11 +12,40 @@ const currentYear = new Date().getFullYear();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>thoughts · jasson franklyn wang (personal site launchpad)</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta
       name="description"
       content="Written perspectives on product management, agentic engineering, and modern software craft by Jasson Franklyn Wang."
     />
+    <meta name="author" content="Jasson Franklyn Wang" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
     <link rel="canonical" href="https://franklyn.page/thoughts" />
+
+    <!-- OpenGraph (Social & Search Indexing) -->
+    <meta property="og:site_name" content="the frank's launchpad" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="thoughts · jasson franklyn wang (personal site launchpad)" />
+    <meta
+      property="og:description"
+      content="Written perspectives on product management, agentic engineering, and modern software craft by Jasson Franklyn Wang."
+    />
+    <meta property="og:url" content="https://franklyn.page/thoughts" />
+    <meta property="og:image" content="https://franklyn.page/og-image.svg" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@franklynical" />
+    <meta name="twitter:creator" content="@franklynical" />
+    <meta name="twitter:title" content="thoughts · jasson franklyn wang" />
+    <meta
+      name="twitter:description"
+      content="Written perspectives on product management, agentic engineering, and modern software craft by Jasson Franklyn Wang."
+    />
+    <meta name="twitter:image" content="https://franklyn.page/og-image.svg" />
 
     <!-- Google Sans Flex Full Multi-Axis Variable Delivery -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -35,17 +64,19 @@ const currentYear = new Date().getFullYear();
       "url": "https://franklyn.page/thoughts",
       "name": "thoughts · jasson franklyn wang",
       "description": "Written perspectives on product management, agentic engineering, and modern software craft by Jasson Franklyn Wang.",
+      "dateModified": "2026-11-10",
       "author": {
         "@type": "Person",
         "@id": "https://franklyn.page/#person",
-        "name": "Jasson Franklyn Wang"
+        "name": "Jasson Franklyn Wang",
+        "url": "https://franklyn.page/"
       }
     }
     </script>
   </head>
   <body class="antialiased body-prose">
     <main class="min-h-screen px-6 sm:px-10 pt-10 sm:pt-14 md:pt-16 pb-16 sm:pb-24 flex flex-col justify-between">
-      <article class="max-w-2xl mx-auto w-full space-y-12 sm:space-y-14 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.65]">
+      <article class="max-w-2xl md:max-w-3xl mx-auto w-full space-y-12 sm:space-y-14 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.65]">
         
         <!-- Navigation Back (Static Typography, No Sliding Underline) -->
         <nav>
@@ -59,7 +90,7 @@ const currentYear = new Date().getFullYear();
 
         <!-- Header -->
         <header class="space-y-2">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[var(--text-primary)]">
+          <h1 class="section-heading text-3xl sm:text-4xl md:text-5xl tracking-tight text-[var(--text-primary)]">
             my thoughts
           </h1>
           <p class="editorial-slant text-sm sm:text-base text-[var(--text-secondary)]">
@@ -73,8 +104,11 @@ const currentYear = new Date().getFullYear();
             <article class="space-y-2.5 pt-1">
               <a href={`/thoughts/${thought.slug}`} class="group block space-y-2">
                 <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                  <h2 class="text-xl sm:text-2xl font-medium text-[var(--text-primary)] group-hover:text-[var(--text-primary)] transition-colors">
-                    {thought.title}
+                  <h2 class="text-xl sm:text-2xl font-medium text-[var(--text-primary)] group-hover:text-[var(--text-primary)] transition-colors inline-flex items-center gap-1.5">
+                    <span class="sliding-underline">{thought.title}</span>
+                    <span class="inline-block text-base text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
+                      ↗
+                    </span>
                   </h2>
                   <div class="flex items-center gap-2 text-xs">
                     <span class="metadata-tag text-[var(--text-secondary)] shrink-0">{thought.category} · {thought.date}</span>
@@ -91,16 +125,20 @@ const currentYear = new Date().getFullYear();
           ))}
         </section>
 
-        <!-- Footer -->
-        <footer class="pt-8 border-t border-black/10 dark:border-white/15 flex justify-between items-center text-sm">
-          <a href="/" class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors">
+        <!-- In-Article Bottom Navigation -->
+        <nav class="pt-8 border-t border-black/10 dark:border-white/15">
+          <a
+            href="/"
+            class="text-sm sm:text-base text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors inline-flex items-center gap-1.5"
+          >
             ← back to launchpad
           </a>
-          <span class="metadata-tag opacity-75 text-[var(--text-secondary)]">
-            the frank&apos;s launchpad · {currentYear}
-          </span>
-        </footer>
+        </nav>
       </article>
+
+      <footer class="max-w-2xl md:max-w-3xl mx-auto w-full pt-14 sm:pt-20 text-xs text-[var(--text-secondary)] select-none">
+        <p class="metadata-tag opacity-75">the frank&apos;s launchpad · {currentYear}</p>
+      </footer>
     </main>
   </body>
 </html>

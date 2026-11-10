@@ -1,71 +1,123 @@
 # Jasson Franklyn Wang — Comprehensive Portfolio & Background
 
-> Complete background, biography, career history, technical competencies, and verifiable project details for Jasson Franklyn Wang (handle: franklynical).
+> Complete background, biography, career history, technical competencies, verifiable project details, and architectural specifications for Jasson Franklyn Wang (handle: franklynical).
 
 ## Overview
 - **Name**: Jasson Franklyn Wang
 - **Aliases**: franklynical, Franklyn Wang, Jasson Wang, Frank
 - **Current Role**: Product Manager Intern at Privy (PT Privy Identitas Digital)
 - **Primary Website**: [https://franklyn.page/](https://franklyn.page/)
+- **Thoughts & Perspectives**: [https://franklyn.page/thoughts](https://franklyn.page/thoughts)
 - **Contact Email**: [mailto:jassonfranklyn@gmail.com](mailto:jassonfranklyn@gmail.com)
 - **Nationality**: Indonesian
 
-## Professional Experience & Global Milestones
+## Professional Experience & Career Track Record
 
-### Privy {#privy}
-- **Role**: Product Manager Intern (2026)
-- **Focus**: Executing product discovery, authoring Product Requirement Documents (PRDs), and streamlining release note CMS pipelines within a high-growth digital trust and electronic identity ecosystem. Collaborating across cross-functional engineering, design, and business teams to architect user-centric digital signature and identity verification workflows.
-- **Reference Anchor**: [https://franklyn.page/#privy](https://franklyn.page/#privy)
+### Privy (PT Privy Identitas Digital) {#privy}
+- **Role**: Product Manager Intern (Sep 2026 – Present)
+- **Domain**: Digital Trust, Electronic Identity Verification (e-KYC), and Digital Signatures.
+- **Key Contributions**:
+  - Authored production-grade Product Requirement Documents (PRDs) and executed structured product discovery across digital trust ecosystems.
+  - Audited 17+ end-to-end user journeys across core workflows to pinpoint friction points, dropped steps, and usability barriers.
+  - Leading cross-functional alignment across engineering squads, product design, legal compliance, and business stakeholders to drive user adoption.
+- **Reference Anchor**: [https://franklyn.page/#credentials](https://franklyn.page/#credentials)
 
 ### Google I/O 2026 (Mountain View, California) {#google-io-2026}
 - **Role**: Indonesian National Student Delegate & Prototype Presenter (May 2026)
-- **Achievement**: Selected as 1 of 7 Indonesian delegates invited to Google Headquarters in Mountain View, California. Presented the **MakanSini** prototype directly to an international developer audience and won **1st Place** in the global "Dragons' Den" Back-to-School Student Marketing Pitch Challenge.
-- **Reference Anchor**: [https://franklyn.page/#google-io-2026](https://franklyn.page/#google-io-2026)
+- **Selection**: 1 of 7 national delegates selected from 800+ nationwide applicants (0.875% acceptance rate).
+- **Key Contributions**:
+  - Pitched the winning Go-To-Market (GTM) campaign in the global Dragons' Den challenge for Gemini back-to-school activation.
+  - Presented the **MakanSini** AI culinary intelligence prototype live in Mountain View to international developer leaders.
+- **Reference Anchor**: [https://franklyn.page/#credentials](https://franklyn.page/#credentials)
 
 ### Google Student Ambassador Indonesia {#google-student-ambassador}
-- **Role**: Ambassador — 2nd Generation, 1st Cohort, Rising Star Tier (2025–2026)
-- **Recognition**: Selected among the Top 100 Google Student Ambassadors in Indonesia. Awarded **2x Content Grand Champion** (including Grand Champion in the Google AI Content Champion competition) while generating over **120,000+ organic content reach** across developer advocacy and educational AI campaigns.
-- **Reference Anchor**: [https://franklyn.page/#google-student-ambassador](https://franklyn.page/#google-student-ambassador)
+- **Role**: Ambassador — 2nd Generation, 1st Cohort (Sep 2025 – Jun 2026)
+- **Impact & Recognition**:
+  - Named **2x National Grand Champion** (Google AI Content Champion and Gemini Ramadan Content Champion).
+  - Upskilled 100+ developers across 6+ technical AI workshops, co-curated nationwide webinars with Google for Education, and generated 180,000+ organic developer impressions.
+- **Reference Anchor**: [https://franklyn.page/#credentials](https://franklyn.page/#credentials)
+
+### Rumah Sakit UNS Surakarta (IT Project Management) {#uns-hospital}
+- **Role**: Project Management Intern (Apr 2025 – Dec 2025)
+- **Key Contributions**:
+  - Conducted structured user discovery with 7 clinical department heads, mapping 15+ workflows into a prioritized 4-phase MVP roadmap with 100% stakeholder approval.
+  - Co-managed 8 two-week Agile sprints across a 5-engineer squad with 100% on-time milestone delivery and ~25% scope creep reduction.
+  - Engineered Telegram webhook automations with standardized SQL logic, cutting ticketing latency by 30% and saving 10–15 staff hours weekly.
+- **Reference Anchor**: [https://franklyn.page/#credentials](https://franklyn.page/#credentials)
 
 ### Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka {#bangkit-academy}
-- **Role**: Machine Learning Apprentice & Product Capstone Lead (H2 2024 Cohort)
-- **Focus**: Led cross-functional product management and machine learning integration for **CeKulit** from discovery to deployment, bridging computer vision models with accessible mobile user interfaces and structured product roadmaps.
-- **Reference Anchor**: [https://franklyn.page/#bangkit-academy](https://franklyn.page/#bangkit-academy)
+- **Role**: Capstone Product Manager Lead & Machine Learning Apprentice (Sep 2024 – Dec 2024)
+- **Key Contributions**:
+  - Directed a 6-engineer cross-functional squad across ML, Cloud, and Mobile tracks to deliver the **CeKulit** skin diagnostic MVP on schedule.
+  - Authored the product PRD, user story maps, and commercialization roadmap across 3 B2B revenue pathways and 4-tier daily retention loops, earning a 92.5/100 jury score.
+- **Reference Anchor**: [https://franklyn.page/#credentials](https://franklyn.page/#credentials)
 
-### Rumah Sakit UNS Surakarta (IT Project & Engineering Internship)
-- **Role**: IT Intern (2025)
-- **Impact**: Architected and deployed an internal Laravel ticketing system integrated with automated Telegram webhooks, reducing internal issue routing latency by 30%.
+## Shipped Products & Architectural Specifications
 
-## Education, Research & Public Speaking {#education}
+### 1. WriteFrankly {#writefrankly}
+- **Live URL**: [https://writefrankly.ai.studio/](https://writefrankly.ai.studio/)
+- **Category**: Private Reflection & Journaling Companion
+- **Stack**: Gemini API, Cloud Run, Next.js, TypeScript, Firebase, Web Crypto AES-GCM
+- **Architecture**:
+  - Engineered dynamic multi-turn Gemini API dialogue trees with real-time prompt calibration.
+  - Implemented client-side Web Crypto AES-GCM 256-bit encryption with in-RAM PII masking prior to model context serialization, achieving zero plaintext storage of private journal entries.
+  - Deployed to Google Cloud Run serverless containers with zero cold-start state loss.
+
+### 2. MakanSini 2.0 {#makansini}
+- **Repository**: [https://github.com/4ranklyn/MakanSiniv2](https://github.com/4ranklyn/MakanSiniv2)
+- **Category**: Culinary Intelligence & Geospatial Recommendation MVP
+- **Stack**: Gemini API, Google Places API, Cloud Run, Go, React, Docker
+- **Architecture**:
+  - Shipped cross-platform MVP in 7 days to eliminate student food decision fatigue.
+  - Integrated Gemini models with Google Places API for real-time spatial intent mapping, prompt-injection sanitization filters, and sub-400ms p95 latency on Cloud Run.
+
+### 3. VeraGate {#veragate}
+- **Repository**: [https://github.com/4ranklyn/veragate](https://github.com/4ranklyn/veragate)
+- **Category**: Autonomous Multimodal Forensic Audit Engine
+- **Stack**: Gemini 3, Multi-Agent Systems, Next.js, TypeScript, Docker, Server-Sent Events (SSE)
+- **Architecture**:
+  - Dual-agent architecture featuring a **Watcher** (multimodal frame-by-frame video extractor) and an **Auditor** (technical PDF schema analyzer).
+  - Evaluates spatial, temporal, and specification contradictions between video inspections and regulatory documentation, streaming structured reasoning logs via SSE.
+
+### 4. CeKulit {#cekulit}
+- **Repository**: [https://github.com/4ranklyn/cekulit-ml](https://github.com/4ranklyn/cekulit-ml)
+- **Category**: AI Dermatological Diagnostic Mobile App
+- **Stack**: TensorFlow, Cloud Flask API, Google Cloud, Mobile (Android), Python
+- **Architecture**:
+  - Optimized lightweight convolutional neural network (CNN) architectures attaining 84%+ diagnostic accuracy.
+  - Deployed Cloud Flask inference API maintaining sub-$1/day operational COGS.
+
+## Education & Academic Research {#education}
 
 ### Universitas Sebelas Maret (UNS)
-- **Degree**: Bachelor of Informatics / Computer Science (S.Kom.), graduated May 2026 (3.67 GPA)
-- **Published Research**: Authored and presented research evaluating Swin Transformer visual encoders for Indonesian language image captioning at the International Conference on Informatics and Computing (**ICIC 2026**).
-- **Public Speaking & Leadership**: Selected as a Student Speaker Finalist for **TEDxUNS** (May 2025), delivering the talk *"The Rule of Authenticity"*. Completed the nine-week global **Aspire Leaders Program** curriculum (April 2026).
-- **Reference Anchor**: [https://franklyn.page/#education](https://franklyn.page/#education)
+- **Degree**: Bachelor of Computer Science (S.Kom.), Informatics Major, Humanized System Minor (Aug 2022 – Apr 2026)
+- **GPA**: 3.67 / 4.00
+- **Thesis Research**: *Swin Transformer and IndoBARTv2 on Indonesian Image Captioning* — evaluating hierarchical vision transformers coupled with sequence-to-sequence language models for localized semantic description.
+- **Teaching Assistant**: Data Structures & Algorithms in C++ (Department of Informatics).
 
-## Core Competencies & Technical Stack
+## Awards & Recognitions
+- **Samsung Galaxy Campus National Champion** (2024–2026): Fully funded international delegation to Vietnam.
+- **Google I/O 2026 Students' Dragons' Den Winner** (2026): Global Marketing Pitch Challenge champion in Mountain View, CA.
+- **2x Google Student Ambassador Content Grand Champion** (2025–2026): Google AI Content Champion and Gemini Ramadan Content Champion.
+- **Gemini Master Challenge Awardee** (2025).
+- **#AutomateYourFuture Content Challenge Runner-Up** (2025).
+- **TEDxUNS Student Speaker Finalist** (2025): Talk delivered on authentic digital communication.
 
-### AI Product Development & Architecture
-- **LLM Workflows**: Designing structured prompt pipelines, evaluation harnesses, and tool-augmented generation using Gemini API, OpenAI, and Claude ecosystems.
-- **Agentic Architectures**: Multi-agent coordination, autonomous tool calling, and LLM-native sub-agent harnesses for product requirement workflows.
-- **Model Context Protocol (MCP)**: Implementing standard context and tool servers enabling LLMs to safely query data stores and execute external actions.
-- **Retrieval-Augmented Generation (RAG)**: Embedding pipelines, vector search retrieval, hybrid keyword/vector search, and context reranking.
-- **Rapid Full-Stack Prototyping**: Fast turnaround from user pain point to interactive proof-of-concept using React, Next.js, TypeScript, Tailwind CSS, Python, Go, Kotlin (Jetpack Compose), Firebase, and Cloud Run.
-
-### Media & Creative Direction {#media}
-- **Video & Visual Media Production**: Directing, scripting, and editing high-retention short-form video and carousel media when ideas and products require broad organic distribution.
-- **Reference Anchor**: [https://franklyn.page/#media](https://franklyn.page/#media)
+## Professional Certifications
+- Google Project Management Professional Certificate (Google Skills)
+- DeepLearning.AI Machine Learning Specialization
+- DeepLearning.AI TensorFlow Developer Professional Certificate
+- DeepLearning.AI Structuring Machine Learning Projects
+- 5-Day AI Agents Intensive with Google
+- Gemini Certified Student & Educator
+- McKinsey Forward Program (McKinsey & Company)
+- Aspire Leaders Program Fellow (Aspire Institute)
+- 22+ Google Cloud Skill Badges (Multi-Agent Architectures, Vertex AI Gemini API, Cloud Run Serverless, BigQuery ML, Multimodal Vector Search & RAG, Cloud Security, Document AI)
 
 ## Verified External Profiles
-- [Personal Launchpad](https://franklyn.page/): Interactive web portfolio.
-- [GitHub (@4ranklyn)](https://github.com/4ranklyn): Code repositories and open-source prototypes.
-- [LinkedIn (franklynical)](https://linkedin.com/in/franklynical): Professional network and career updates.
-- [Instagram (@franklynical)](https://instagram.com/franklynical): Creative media and visual chronicles.
-- [Google Search Knowledge Panel](https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50): Verified Google Search entity identity.
-- [Email](mailto:jassonfranklyn@gmail.com): Direct communication channel.
-
-## Discovery & Standards Metadata
-- [Agentic Resource Discovery Manifest](https://franklyn.page/.well-known/ard.json): Valid ARD manifest with resource entries.
-- [LLMs.txt Index](https://franklyn.page/llms.txt): Concise markdown discovery index.
-- [XML Sitemap](https://franklyn.page/sitemap.xml): Search crawler index.
+- [Personal Launchpad](https://franklyn.page/)
+- [GitHub (@4ranklyn)](https://github.com/4ranklyn)
+- [LinkedIn (franklynical)](https://linkedin.com/in/franklynical)
+- [Instagram (@franklynical)](https://instagram.com/franklynical)
+- [Google Knowledge Graph Entry](https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50)
+- [Email](mailto:jassonfranklyn@gmail.com)

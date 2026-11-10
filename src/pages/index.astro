@@ -28,33 +28,44 @@ const currentYear = new Date().getFullYear();
       name="description"
       content="Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy, UNS Computer Science graduate, and Indonesian delegate for Google I/O 2026 in Mountain View."
     />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="author" content="Jasson Franklyn Wang" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta
       name="keywords"
-      content="Jasson Franklyn Wang, Jasson Wang, franklynical, Product Manager Privy, Google Ambassador Indonesia, Google IO 2026, Universitas Sebelas Maret, the frank's launchpad"
+      content="Jasson Franklyn Wang, Jasson Wang, franklynical, Product Manager Privy, Google Ambassador Indonesia, Google IO 2026, Universitas Sebelas Maret, the frank's launchpad, Agentic AI, Gemini API, WriteFrankly, VeraGate, MakanSini"
     />
 
-    <!-- OpenGraph (Social & Search Indexing) -->
+    <!-- OpenGraph (Social, Discovery & Answer Engines) -->
     <meta property="og:site_name" content="the frank's launchpad" />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="jasson franklyn wang (personal site launchpad)" />
     <meta
       property="og:description"
-      content="Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy and Indonesian delegate for Google I/O 2026."
+      content="Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy, UNS Computer Science graduate, and Indonesian delegate for Google I/O 2026 in Mountain View."
     />
     <meta property="profile:first_name" content="Jasson" />
     <meta property="profile:last_name" content="Wang" />
     <meta property="profile:username" content="franklynical" />
     <meta property="og:url" content="https://franklyn.page/" />
+    <meta property="og:image" content="https://franklyn.page/og-image.svg" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Jasson Franklyn Wang — Personal Launchpad & Portfolio" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter / X Cards -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@franklynical" />
+    <meta name="twitter:creator" content="@franklynical" />
     <meta name="twitter:title" content="jasson franklyn wang (personal site launchpad)" />
     <meta
       name="twitter:description"
       content="Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical). Product Manager Intern at Privy and Indonesian delegate for Google I/O 2026."
     />
+    <meta name="twitter:image" content="https://franklyn.page/og-image.svg" />
+    <meta name="twitter:image:alt" content="Jasson Franklyn Wang — Personal Launchpad & Portfolio" />
 
     <meta
       http-equiv="Content-Security-Policy"
@@ -85,7 +96,7 @@ const currentYear = new Date().getFullYear();
 
     <link rel="canonical" href="https://franklyn.page/" />
 
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org Knowledge Graph (SEO / AEO / GEO Unified Graph) -->
     <script type="application/ld+json" is:inline>
     {
       "@context": "https://schema.org",
@@ -96,7 +107,7 @@ const currentYear = new Date().getFullYear();
           "url": "https://franklyn.page/",
           "name": "jasson franklyn wang (personal site launchpad)",
           "description": "Official personal launchpad and portfolio of Jasson Franklyn Wang (franklynical).",
-          "dateModified": "2026-11-08",
+          "dateModified": "2026-11-10",
           "mainEntity": {
             "@id": "https://franklyn.page/#person"
           }
@@ -110,6 +121,7 @@ const currentYear = new Date().getFullYear();
           "familyName": "Wang",
           "alternateName": ["franklynical", "Franklyn Wang", "Jasson Wang", "Frank"],
           "url": "https://franklyn.page/",
+          "image": "https://franklyn.page/og-image.svg",
           "description": "Product Manager Intern at Privy, Computer Science graduate from Universitas Sebelas Maret (UNS), Indonesian delegate at Google I/O 2026 in Mountain View, and 2x Google Student Ambassador Content Grand Champion.",
           "jobTitle": "Product Manager Intern",
           "worksFor": {
@@ -122,6 +134,21 @@ const currentYear = new Date().getFullYear();
             "name": "Universitas Sebelas Maret",
             "url": "https://uns.ac.id"
           },
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Product Manager",
+            "occupationalCategory": "15-1251.00",
+            "skills": "Product Discovery, PRD Authoring, Digital Identity, Large Language Models, Multi-Agent Architectures, Gemini API"
+          },
+          "award": [
+            "Google I/O 2026 Students' Dragons' Den Winner (Global Marketing Pitch Challenge, Mountain View)",
+            "Samsung Galaxy Campus National Champion (Fully Funded Delegation to Vietnam)",
+            "2x Google Student Ambassador Content Grand Champion",
+            "Gemini Ramadan Content Champion",
+            "Gemini Master Challenge Awardee",
+            "TEDxUNS Student Speaker Finalist",
+            "Aspire Leaders Program Fellow"
+          ],
           "knowsAbout": [
             "Product Management",
             "Agentic AI",
@@ -130,7 +157,9 @@ const currentYear = new Date().getFullYear();
             "Multi-Agent Architectures",
             "Gemini API",
             "Full-Stack Prototyping",
-            "Computer Science"
+            "Computer Science",
+            "Digital Signatures",
+            "Digital Trust"
           ],
           "email": "mailto:jassonfranklyn@gmail.com",
           "sameAs": [
@@ -139,6 +168,103 @@ const currentYear = new Date().getFullYear();
             "https://instagram.com/franklynical",
             "https://linkedin.com/in/franklynical"
           ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://franklyn.page/#projects",
+          "name": "Software & AI Prototypes Built by Jasson Franklyn Wang",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "WriteFrankly",
+                "applicationCategory": "ProductivityApplication",
+                "operatingSystem": "Web",
+                "url": "https://writefrankly.ai.studio/",
+                "description": "Private journaling companion with in-RAM PII masking, Web Crypto AES-GCM 256-bit encryption at rest, and dynamic Gemini API dialogue flows on Cloud Run.",
+                "creator": { "@id": "https://franklyn.page/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "MakanSini 2.0",
+                "applicationCategory": "LifestyleApplication",
+                "operatingSystem": "Web",
+                "url": "https://github.com/4ranklyn/MakanSiniv2",
+                "description": "Cross-platform culinary intelligence MVP integrating Gemini and Google Places APIs on Cloud Run, presented live at Google I/O 2026 in Mountain View.",
+                "creator": { "@id": "https://franklyn.page/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "VeraGate",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "Web",
+                "url": "https://github.com/4ranklyn/veragate",
+                "description": "Autonomous multimodal forensic audit engine leveraging Gemini 3 Watcher & Auditor dual-agent architecture with Server-Sent Events.",
+                "creator": { "@id": "https://franklyn.page/#person" }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "SoftwareApplication",
+                "name": "CeKulit",
+                "applicationCategory": "HealthApplication",
+                "operatingSystem": "Android, Web",
+                "url": "https://github.com/4ranklyn/cekulit-ml",
+                "description": "AI skin diagnostic MVP directed across ML, Cloud, and Mobile tracks with TensorFlow CNN models and Cloud Flask inference.",
+                "creator": { "@id": "https://franklyn.page/#person" }
+              }
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://franklyn.page/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Who is Jasson Franklyn Wang?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Jasson Franklyn Wang (handle: franklynical) is an Indonesian Product Manager Intern at Privy, Computer Science graduate from Universitas Sebelas Maret (UNS), and Google Student Ambassador 2x Content Grand Champion who was selected as 1 of 7 national delegates to represent Indonesia at Google I/O 2026 in Mountain View, California."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What software projects has Jasson Franklyn Wang built?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Jasson has built several production-grade AI prototypes including WriteFrankly (a zero-knowledge private reflection companion with Gemini API and Web Crypto AES-256), MakanSini 2.0 (a culinary intelligence MVP presented at Google I/O 2026), VeraGate (an autonomous multimodal forensic audit engine leveraging Gemini 3), and CeKulit (an AI skin diagnostic MVP developed during Bangkit Academy)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What was Jasson Franklyn Wang's achievement at Google I/O 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Selected from 800+ national candidates (0.875% acceptance rate), Jasson represented Indonesia at Google I/O 2026 in Mountain View, presented his MakanSini prototype, and pitched the winning Go-To-Market campaign in the global Students' Dragons' Den challenge for Gemini back-to-school activation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can you contact Jasson Franklyn Wang?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can contact Jasson directly via email at jassonfranklyn@gmail.com, or connect on LinkedIn (linkedin.com/in/franklynical), GitHub (@4ranklyn), and Instagram (@franklynical)."
+              }
+            }
+          ]
         }
       ]
     }
@@ -146,7 +272,7 @@ const currentYear = new Date().getFullYear();
   </head>
   <body class="antialiased body-prose">
     <main class="min-h-screen px-6 sm:px-10 pt-10 sm:pt-14 md:pt-16 pb-16 sm:pb-24 flex flex-col justify-between">
-      <article class="max-w-2xl mx-auto w-full space-y-14 sm:space-y-16 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.65]">
+      <article class="max-w-2xl md:max-w-3xl mx-auto w-full space-y-14 sm:space-y-16 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.65]">
         
         <!-- STOP 1: WORDMARK AND HOOK -->
         <header id="overview" class="space-y-6 sm:space-y-8">
@@ -249,7 +375,7 @@ const currentYear = new Date().getFullYear();
             </div>
           </div>
 
-          <p class="text-sm sm:text-base text-[var(--text-secondary)] font-normal tracking-tight leading-relaxed">
+          <p class="hero-tagline text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
             product manager, agentic builder, emerging creator.
           </p>
         </header>
@@ -257,25 +383,26 @@ const currentYear = new Date().getFullYear();
 
         <!-- STOP 2: CREDENTIALS (UNBOXED) -->
         <section id="credentials" aria-label="Credentials" class="space-y-4">
-          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+          <h2 class="section-heading text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)]">
             what i do (and did)
           </h2>
 
           <div class="space-y-2.5">
             <!-- Privy -->
-            <div class="group cursor-pointer py-1">
+            <div class="group cursor-pointer py-1" data-expandable>
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    Privy
-                  </span>
-                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                <span class="entity-title text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] shrink-0">
+                  Privy
+                </span>
+                <div class="flex items-baseline gap-2 sm:gap-2.5 sm:justify-end text-sm sm:text-base">
+                  <span class="role-tag text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] transition-colors">
                     Product Manager Intern
                   </span>
+                  <span class="text-[var(--text-secondary)] opacity-30 select-none">·</span>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                    Sep 26 - Present
+                  </span>
                 </div>
-                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
-                  Sep 26 - Present
-                </span>
               </div>
               <div class="expandable-drawer">
                 <div class="expandable-drawer-inner">
@@ -287,19 +414,20 @@ const currentYear = new Date().getFullYear();
             </div>
 
             <!-- Google -->
-            <div class="group cursor-pointer py-1">
+            <div class="group cursor-pointer py-1" data-expandable>
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    Google
-                  </span>
-                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                <span class="entity-title text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] shrink-0">
+                  Google
+                </span>
+                <div class="flex items-baseline gap-2 sm:gap-2.5 sm:justify-end text-sm sm:text-base">
+                  <span class="role-tag text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] transition-colors">
                     Student Ambassador &amp; I/O Delegate
                   </span>
+                  <span class="text-[var(--text-secondary)] opacity-30 select-none">·</span>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                    Sep 25 - Jun 26
+                  </span>
                 </div>
-                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
-                  Sep 25 - Jun 26
-                </span>
               </div>
               <div class="expandable-drawer">
                 <div class="expandable-drawer-inner">
@@ -311,19 +439,20 @@ const currentYear = new Date().getFullYear();
             </div>
 
             <!-- UNS Hospital -->
-            <div class="group cursor-pointer py-1">
+            <div class="group cursor-pointer py-1" data-expandable>
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    UNS Hospital
-                  </span>
-                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                <span class="entity-title text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] shrink-0">
+                  UNS Hospital
+                </span>
+                <div class="flex items-baseline gap-2 sm:gap-2.5 sm:justify-end text-sm sm:text-base">
+                  <span class="role-tag text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] transition-colors">
                     Project Management Intern
                   </span>
+                  <span class="text-[var(--text-secondary)] opacity-30 select-none">·</span>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                    Apr 25 - Dec 25
+                  </span>
                 </div>
-                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
-                  Apr 25 - Dec 25
-                </span>
               </div>
               <div class="expandable-drawer">
                 <div class="expandable-drawer-inner">
@@ -335,19 +464,20 @@ const currentYear = new Date().getFullYear();
             </div>
 
             <!-- Bangkit Academy -->
-            <div class="group cursor-pointer py-1">
+            <div class="group cursor-pointer py-1" data-expandable>
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    Bangkit Academy
-                  </span>
-                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                <span class="entity-title text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] shrink-0">
+                  Bangkit Academy
+                </span>
+                <div class="flex items-baseline gap-2 sm:gap-2.5 sm:justify-end text-sm sm:text-base">
+                  <span class="role-tag text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] transition-colors">
                     Capstone PM Lead &amp; ML Apprentice
                   </span>
+                  <span class="text-[var(--text-secondary)] opacity-30 select-none">·</span>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                    Sep 24 - Dec 24
+                  </span>
                 </div>
-                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
-                  Sep 24 - Dec 24
-                </span>
               </div>
               <div class="expandable-drawer">
                 <div class="expandable-drawer-inner">
@@ -363,25 +493,26 @@ const currentYear = new Date().getFullYear();
 
         <!-- WHAT I STUDIED -->
         <section id="education" aria-label="Education" class="space-y-4">
-          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+          <h2 class="section-heading text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)]">
             what i studied
           </h2>
 
           <div class="space-y-2.5">
             <!-- Universitas Sebelas Maret -->
-            <div class="group cursor-pointer py-1">
+            <div class="group cursor-pointer py-1" data-expandable>
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    Universitas Sebelas Maret
-                  </span>
-                  <span class="role-tag text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transition-colors">
+                <span class="entity-title text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] shrink-0">
+                  Universitas Sebelas Maret
+                </span>
+                <div class="flex items-baseline gap-2 sm:gap-2.5 sm:justify-end text-sm sm:text-base">
+                  <span class="role-tag text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] transition-colors">
                     B.Cs. (S.Kom.), Computer Science
                   </span>
+                  <span class="text-[var(--text-secondary)] opacity-30 select-none">·</span>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
+                    Aug 22 - Apr 26
+                  </span>
                 </div>
-                <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
-                  Aug 22 - Apr 26
-                </span>
               </div>
               <div class="expandable-drawer">
                 <div class="expandable-drawer-inner">
@@ -397,7 +528,7 @@ const currentYear = new Date().getFullYear();
 
         <!-- WHAT I ACHIEVED -->
         <section id="achievements" aria-label="Achievements" class="space-y-4">
-          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+          <h2 class="section-heading text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)]">
             what i achieved
           </h2>
 
@@ -405,11 +536,9 @@ const currentYear = new Date().getFullYear();
             <!-- Awards -->
             <div class="group py-1">
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    Awards
-                  </span>
-                </div>
+                <span class="entity-title text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)]">
+                  Awards
+                </span>
                 <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
                   2024 - 2026
                 </span>
@@ -429,11 +558,9 @@ const currentYear = new Date().getFullYear();
             <!-- Certifications -->
             <div class="group py-1">
               <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                <div class="flex items-baseline gap-2">
-                  <span class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    Certifications
-                  </span>
-                </div>
+                <span class="entity-title text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)]">
+                  Certifications
+                </span>
                 <span class="metadata-tag text-[var(--text-secondary)] shrink-0">
                   2024 - 2026
                 </span>
@@ -458,160 +585,160 @@ const currentYear = new Date().getFullYear();
 
         <!-- STOP 3: BUILDS (UNBOXED) -->
         <section id="builds" aria-label="Builds" class="space-y-4">
-          <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+          <h2 class="section-heading text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)]">
             what i have built
           </h2>
 
           <div class="space-y-3">
             <!-- WriteFrankly -->
-            <div class="group cursor-pointer py-1">
-              <a
-                href="https://writefrankly.ai.studio/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block"
-              >
-                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
-                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
-                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
-                      <span class="sliding-underline">WriteFrankly</span>
-                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+            <div class="group cursor-pointer py-1" data-expandable>
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                  <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                    <a
+                      href="https://writefrankly.ai.studio/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="sliding-underline inline-flex items-center gap-1.5 hover:text-[var(--text-primary)]"
+                    >
+                      <span>WriteFrankly</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
                         ↗
                       </span>
-                    </h3>
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Aug 2026</span>
-                  </div>
-                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Aug 2026</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini API</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Run</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Next.js</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TypeScript</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Firebase</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Web Crypto</span>
-                  </div>
+                    </a>
+                  </h3>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Aug 2026</span>
                 </div>
-                <div class="expandable-drawer">
-                  <div class="expandable-drawer-inner">
-                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
-                      Private journaling companion for unvarnished reflection without performance or fear of consequence. Engineered dynamic Gemini API dialogue flows with in-RAM PII masking, Web Crypto AES-GCM 256-bit encryption at rest, and instant onboarding on Cloud Run with zero data loss.
-                    </p>
-                  </div>
+                <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Aug 2026</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini API</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Run</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Next.js</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TypeScript</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Firebase</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Web Crypto</span>
                 </div>
-              </a>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Private journaling companion for unvarnished reflection without performance or fear of consequence. Engineered dynamic Gemini API dialogue flows with in-RAM PII masking, Web Crypto AES-GCM 256-bit encryption at rest, and instant onboarding on Cloud Run with zero data loss.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- MakanSini 2.0 -->
-            <div class="group cursor-pointer py-1">
-              <a
-                href="https://github.com/4ranklyn/MakanSiniv2"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block"
-              >
-                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
-                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
-                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
-                      <span class="sliding-underline">MakanSini 2.0</span>
-                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+            <div class="group cursor-pointer py-1" data-expandable>
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                  <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                    <a
+                      href="https://github.com/4ranklyn/MakanSiniv2"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="sliding-underline inline-flex items-center gap-1.5 hover:text-[var(--text-primary)]"
+                    >
+                      <span>MakanSini 2.0</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
                         ↗
                       </span>
-                    </h3>
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">May 2026</span>
-                  </div>
-                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">May 2026</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini API</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Google Places API</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Run</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Go</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">React</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Docker</span>
-                  </div>
+                    </a>
+                  </h3>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">May 2026</span>
                 </div>
-                <div class="expandable-drawer">
-                  <div class="expandable-drawer-inner">
-                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
-                      Mapped user story journeys to ship a cross-platform culinary intelligence MVP in 7 days. Integrated Gemini and Google Places APIs on Cloud Run with strict prompt-injection defenses and sub-400ms p95 latency; presented live at Google I/O 2026 (Mountain View) as student global marketing pitch champion.
-                    </p>
-                  </div>
+                <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">May 2026</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini API</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Google Places API</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Run</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Go</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">React</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Docker</span>
                 </div>
-              </a>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Mapped user story journeys to ship a cross-platform culinary intelligence MVP in 7 days. Integrated Gemini and Google Places APIs on Cloud Run with strict prompt-injection defenses and sub-400ms p95 latency; presented live at Google I/O 2026 (Mountain View) as student global marketing pitch champion.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- VeraGate -->
-            <div class="group cursor-pointer py-1">
-              <a
-                href="https://github.com/4ranklyn/veragate"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block"
-              >
-                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
-                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
-                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
-                      <span class="sliding-underline">VeraGate</span>
-                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+            <div class="group cursor-pointer py-1" data-expandable>
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                  <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                    <a
+                      href="https://github.com/4ranklyn/veragate"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="sliding-underline inline-flex items-center gap-1.5 hover:text-[var(--text-primary)]"
+                    >
+                      <span>VeraGate</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
                         ↗
                       </span>
-                    </h3>
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Feb 2026</span>
-                  </div>
-                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Feb 2026</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini 3</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Multi-Agent Systems</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Next.js</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TypeScript</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Docker</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">SSE</span>
-                  </div>
+                    </a>
+                  </h3>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Feb 2026</span>
                 </div>
-                <div class="expandable-drawer">
-                  <div class="expandable-drawer-inner">
-                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
-                      Architected an autonomous multimodal forensic audit engine leveraging Gemini 3 (Watcher &amp; Auditor dual-agent architecture) to detect spatial, temporal, and specification contradictions between video evidence and technical PDF documentation, streaming real-time reasoning logs via Server-Sent Events.
-                    </p>
-                  </div>
+                <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Feb 2026</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Gemini 3</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Multi-Agent Systems</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Next.js</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TypeScript</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Docker</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">SSE</span>
                 </div>
-              </a>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Architected an autonomous multimodal forensic audit engine leveraging Gemini 3 (Watcher &amp; Auditor dual-agent architecture) to detect spatial, temporal, and specification contradictions between video evidence and technical PDF documentation, streaming real-time reasoning logs via Server-Sent Events.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <!-- CeKulit -->
-            <div class="group cursor-pointer py-1">
-              <a
-                href="https://github.com/4ranklyn/cekulit-ml"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block"
-              >
-                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
-                  <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
-                    <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
-                      <span class="sliding-underline">CeKulit</span>
-                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 ml-1.5 select-none">
+            <div class="group cursor-pointer py-1" data-expandable>
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1.5 sm:gap-4">
+                <div class="flex items-baseline justify-between sm:justify-start gap-2 min-w-0">
+                  <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)] sm:shrink-0">
+                    <a
+                      href="https://github.com/4ranklyn/cekulit-ml"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="sliding-underline inline-flex items-center gap-1.5 hover:text-[var(--text-primary)]"
+                    >
+                      <span>CeKulit</span>
+                      <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
                         ↗
                       </span>
-                    </h3>
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Sep 24 - Dec 24</span>
-                  </div>
-                  <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
-                    <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Sep 24 - Dec 24</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TensorFlow</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Flask API</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Google Cloud</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Mobile</span>
-                    <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Python</span>
-                  </div>
+                    </a>
+                  </h3>
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 sm:hidden">Sep 24 - Dec 24</span>
                 </div>
-                <div class="expandable-drawer">
-                  <div class="expandable-drawer-inner">
-                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
-                      Directed a 6-engineer cross-functional squad across ML, Cloud, and Mobile tracks to deliver an AI skin diagnostic MVP on schedule. Designed unified REST API contracts and schema mapping conditions to ingredients while optimizing TensorFlow CNN models (84%+ accuracy) deployed to Cloud Flask API with sub-$1/day COGS (92.5/100 jury score).
-                    </p>
-                  </div>
+                <div class="flex flex-wrap items-center gap-1.5 sm:justify-end">
+                  <span class="metadata-tag text-[var(--text-secondary)] shrink-0 hidden sm:inline mr-1">Sep 24 - Dec 24</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">TensorFlow</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Cloud Flask API</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Google Cloud</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Mobile</span>
+                  <span class="metadata-tag px-2 py-0.5 rounded bg-black/5 dark:bg-white/10 text-[var(--text-secondary)]">Python</span>
                 </div>
-              </a>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    Directed a 6-engineer cross-functional squad across ML, Cloud, and Mobile tracks to deliver an AI skin diagnostic MVP on schedule. Designed unified REST API contracts and schema mapping conditions to ingredients while optimizing TensorFlow CNN models (84%+ accuracy) deployed to Cloud Flask API with sub-$1/day COGS (92.5/100 jury score).
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -620,7 +747,7 @@ const currentYear = new Date().getFullYear();
         <!-- STOP 4: THOUGHT STATION (UNBOXED) -->
         <section id="thought-station" aria-label="Thought Station" class="space-y-4">
           <div class="space-y-0.5">
-            <h2 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)] font-medium">
+            <h2 class="section-heading text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] text-[var(--text-primary)]">
               my thoughts
             </h2>
             <p class="editorial-slant text-sm sm:text-base text-[var(--text-secondary)]">
@@ -629,24 +756,30 @@ const currentYear = new Date().getFullYear();
           </div>
 
           <div class="space-y-3">
-            <article class="group cursor-pointer py-1">
-              <a href="/thoughts/what-mountain-view-taught-me-google-io-2026" class="block">
-                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                  <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
-                    <span class="sliding-underline">Memo from The Valley: When Young Local Ambition Met the Core of All Tech</span>
-                  </h3>
-                  <div class="flex items-center gap-2 shrink-0">
-                    <span class="metadata-tag text-[var(--text-secondary)]">Memo · Oct 2026</span>
-                  </div>
+            <article class="group cursor-pointer py-1" data-expandable>
+              <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
+                <h3 class="text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] font-medium text-[var(--text-primary)]">
+                  <a
+                    href="/thoughts/what-mountain-view-taught-me-google-io-2026"
+                    class="sliding-underline inline-flex items-center gap-1.5 hover:text-[var(--text-primary)]"
+                  >
+                    <span>Memo from The Valley: When Young Local Ambition Met the Core of All Tech</span>
+                    <span class="inline-block text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-[.is-expanded]:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
+                      ↗
+                    </span>
+                  </a>
+                </h3>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="metadata-tag text-[var(--text-secondary)]">Memo · Oct 2026</span>
                 </div>
-                <div class="expandable-drawer">
-                  <div class="expandable-drawer-inner">
-                    <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
-                      It has been a while since I lived a short life in Mountain View, California. Travelling 20,000 miles to witness the future of agentic AI, and navigating what happens when the high Valley meets steep local reality.
-                    </p>
-                  </div>
+              </div>
+              <div class="expandable-drawer">
+                <div class="expandable-drawer-inner">
+                  <p class="pt-2 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20 mt-1">
+                    It has been a while since I lived a short life in Mountain View, California. Travelling 20,000 miles to witness the future of agentic AI, and navigating what happens when the high Valley meets steep local reality.
+                  </p>
                 </div>
-              </a>
+              </div>
             </article>
 
             <!-- Redirect Link to Thoughts Station Archive -->
@@ -679,19 +812,19 @@ const currentYear = new Date().getFullYear();
           </p>
 
           <div class="pt-4 text-sm sm:text-base">
-            <p class="text-neutral-900 dark:text-white font-medium">
+            <p class="hero-tagline text-neutral-900 dark:text-white font-medium">
               thanks for visiting my launchpad personal site!
             </p>
           </div>
         </section>
       </article>
 
-      <footer class="max-w-2xl mx-auto w-full pt-14 sm:pt-20 text-xs text-[var(--text-secondary)] select-none">
+      <footer class="max-w-2xl md:max-w-3xl mx-auto w-full pt-14 sm:pt-20 text-xs text-[var(--text-secondary)] select-none">
         <p class="metadata-tag opacity-75">the frank&apos;s launchpad · {currentYear}</p>
       </footer>
     </main>
 
-    <!-- Client Script: Wordmark Social Tray & Natural Mobile Touch Expansion -->
+    <!-- Client Script: Wordmark Social Tray & Cross-Device Predictable Drawer Expansion -->
     <script>
       // Wordmark Social Tray Hover / Click logic
       const anchor = document.getElementById('wordmark-anchor');
@@ -748,15 +881,18 @@ const currentYear = new Date().getFullYear();
         });
       }
 
-      // Touch / Mobile-only tap to toggle expansion
-      if (window.matchMedia('(hover: none)').matches) {
-        const touchGroups = document.querySelectorAll('.group');
-        touchGroups.forEach((item) => {
-          item.addEventListener('click', () => {
-            item.classList.toggle('is-expanded');
-          });
+      // Universal Click / Tap Expansion for all devices without redirect collision
+      const expandableItems = document.querySelectorAll('[data-expandable]');
+      expandableItems.forEach((item) => {
+        item.addEventListener('click', (e) => {
+          const target = e.target as HTMLElement | null;
+          // If clicking an explicit anchor link or interactive control, allow default navigation
+          if (target && target.closest('a')) {
+            return;
+          }
+          item.classList.toggle('is-expanded');
         });
-      }
+      });
     </script>
   </body>
 </html>

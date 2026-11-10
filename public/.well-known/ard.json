@@ -7,12 +7,13 @@
       "displayName": "Jasson Franklyn Wang — Personal Launchpad & Portfolio",
       "type": "text/html",
       "url": "https://franklyn.page/",
-      "description": "Official personal launchpad and interactive portfolio of Jasson Franklyn Wang (franklynical). Product Manager intern at Privy, Indonesian delegate for Google I/O 2026, and Top 100 Google Student Ambassador.",
-      "version": "1.0.0",
+      "description": "Official personal launchpad and interactive portfolio of Jasson Franklyn Wang (franklynical). Product Manager intern at Privy, Indonesian delegate for Google I/O 2026, and 2x Google Student Ambassador Content Grand Champion.",
+      "version": "1.1.0",
       "tags": [
         "portfolio",
         "product-management",
-        "ai-builder",
+        "agentic-ai",
+        "gemini-api",
         "google-ambassador",
         "franklynical",
         "developer"
@@ -21,12 +22,14 @@
         "profile-retrieval",
         "contact",
         "verified-links",
-        "portfolio-discovery"
+        "portfolio-discovery",
+        "skills-verification"
       ],
       "representativeQueries": [
         "Who is Jasson Franklyn Wang?",
         "Find franklynical personal portfolio and contact information.",
-        "What are Jasson Franklyn Wang's achievements and background in AI product management?"
+        "What are Jasson Franklyn Wang's achievements and background in AI product management?",
+        "What projects has Jasson Franklyn Wang built with Gemini and Cloud Run?"
       ]
     },
     {
@@ -35,7 +38,7 @@
       "type": "text/markdown",
       "url": "https://franklyn.page/llms.txt",
       "description": "Structured Markdown link index formatted per the /llms.txt specification for AI crawlers, agents, and LLMs.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "tags": [
         "llms-txt",
         "agent-context",
@@ -53,17 +56,38 @@
       "type": "text/markdown",
       "url": "https://franklyn.page/llms-full.txt",
       "description": "Complete biographical background, career milestones, technical competencies, and project portfolio documentation for LLM agents.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "tags": [
         "llms-full-txt",
         "comprehensive-bio",
         "career-history",
-        "technical-skills"
+        "technical-skills",
+        "architectural-specs"
       ],
       "representativeQueries": [
         "Read complete biography and career history of Jasson Franklyn Wang",
         "Tell me about Jasson Franklyn Wang's experience at Privy, Google I/O 2026, and Bangkit Academy",
-        "What are Jasson Franklyn Wang's technical skills in LLMs, MCP, and RAG?"
+        "What are Jasson Franklyn Wang's technical skills in LLMs, MCP, RAG, and Cloud Run?",
+        "What is the architecture of WriteFrankly and VeraGate?"
+      ]
+    },
+    {
+      "identifier": "urn:air:franklyn.page:perspectives:thoughts",
+      "displayName": "Jasson Franklyn Wang — Thoughts & Perspectives",
+      "type": "text/html",
+      "url": "https://franklyn.page/thoughts",
+      "description": "Perspectives and memos on product discovery, agentic engineering, and lessons from Silicon Valley and Google I/O.",
+      "version": "1.0.0",
+      "tags": [
+        "essays",
+        "memos",
+        "product-management",
+        "agentic-engineering",
+        "silicon-valley"
+      ],
+      "representativeQueries": [
+        "Read Jasson Franklyn Wang's memo from Mountain View",
+        "What did Mountain View teach Jasson Franklyn Wang at Google I/O 2026?"
       ]
     }
   ]

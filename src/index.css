@@ -45,7 +45,7 @@
   }
 }
 
-/* 1. Hero Title / Wordmark: Massive, Sculptural, Architectural */
+/* 1. Hero Title / Wordmark: Massive, Sculptural, Architectural (Benchmark - Preserved) */
 .hero-wordmark {
   font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 850;
@@ -53,37 +53,70 @@
   letter-spacing: -0.04em;
 }
 
-/* 2. Metadata & Section Tags: Runway Lookbook / Technical Spec-Sheet */
+/* 2. Entity / Company / University Titles: Bold, Architectural Anchor */
+.entity-title {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 650;
+  font-variation-settings: 'wght' 650, 'wdth' 106, 'opsz' 20;
+  letter-spacing: -0.015em;
+}
+
+/* 3. Section Headings: Structural, Semi-Expanded Architecture */
+.section-heading {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 620;
+  font-variation-settings: 'wght' 620, 'wdth' 110, 'opsz' 28;
+  letter-spacing: -0.025em;
+}
+
+/* 4. Metadata & Technical Badges: Ultra-Condensed, Precision Technical Spec */
 .metadata-tag {
   font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 11px;
-  font-weight: 500;
-  font-variation-settings: 'wght' 500, 'wdth' 90, 'opsz' 11;
+  font-weight: 550;
+  font-variation-settings: 'wght' 550, 'wdth' 75, 'opsz' 9;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
 }
 
+/* 5. Role / Job Titles: Refined Geometric Stance */
 .role-tag {
   font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 500;
-  font-variation-settings: 'wght' 500, 'wdth' 95, 'opsz' 16;
-  letter-spacing: -0.01em;
+  font-weight: 440;
+  font-variation-settings: 'wght' 440, 'wdth' 102, 'opsz' 16;
+  letter-spacing: -0.005em;
 }
 
-/* 3. Body & Essays: Pure Effortless Reading Clarity */
+/* 6. Tagline / Editorial Subtitle */
+.hero-tagline {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 430;
+  font-variation-settings: 'wght' 430, 'wdth' 102, 'opsz' 16;
+  letter-spacing: -0.008em;
+}
+
+/* 7. Numeric Callout / Tabular Data Figures */
+.numeric-callout {
+  font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  font-variation-settings: 'wght' 600, 'wdth' 88, 'opsz' 14;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* 8. Body & Essays: High-Legibility Variable Rhythm */
 .body-prose {
   font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
   font-variation-settings: 'wght' 400, 'wdth' 100, 'opsz' 15;
-  line-height: 1.65;
+  line-height: 1.68;
 }
 
-/* 4. Emphasis / Kinetic Editorial Accent: Slanted Light */
+/* 9. Emphasis / Kinetic Editorial Accent: Slanted Light */
 .editorial-slant {
   font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 300;
+  font-weight: 320;
   font-style: oblique 10deg;
-  font-variation-settings: 'slnt' -10, 'wght' 300, 'wdth' 100, 'opsz' 16;
+  font-variation-settings: 'slnt' -10, 'wght' 320, 'wdth' 95, 'opsz' 16;
   letter-spacing: -0.01em;
 }
 
@@ -206,11 +239,11 @@
 .expandable-drawer {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  transition: grid-template-rows 0.28s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.22s ease;
   opacity: 0;
 }
 
-/* On desktop, expand strictly on hover so clicking does not leave it stuck open */
+/* Expand smoothly on hover for desktop */
 @media (hover: hover) {
   .group:hover .expandable-drawer {
     grid-template-rows: 1fr;
@@ -218,12 +251,10 @@
   }
 }
 
-/* On touch/mobile devices without pointer hover, tap toggles .is-expanded */
-@media (hover: none) {
-  .group.is-expanded .expandable-drawer {
-    grid-template-rows: 1fr;
-    opacity: 1;
-  }
+/* Universal Click/Tap Pinning & Toggle (.is-expanded works cross-device without redirect) */
+.group.is-expanded .expandable-drawer {
+  grid-template-rows: 1fr !important;
+  opacity: 1 !important;
 }
 
 .expandable-drawer-inner {

@@ -1,11 +1,12 @@
 # Jasson Franklyn Wang — Personal Launchpad & Portfolio
 
-> Official personal launchpad and portfolio of Jasson Franklyn Wang (handle: franklynical) — Product Manager at Privy, AI Builder, Universitas Sebelas Maret (UNS) Informatics graduate, Google Student Ambassador 2x Content Grand Champion, and Indonesian national delegate for Google I/O 2026 in Mountain View.
+> Official personal launchpad and portfolio of Jasson Franklyn Wang (handle: franklynical) — Product Manager at Privy, Agentic AI Builder, Universitas Sebelas Maret (UNS) Computer Science graduate, Google Student Ambassador 2x Content Grand Champion, and Indonesian national delegate for Google I/O 2026 in Mountain View.
 
 ## Companion Documentation & Manifests
 - [Comprehensive Biography & Deep-Dive](https://franklyn.page/llms-full.txt): Complete career background, verified milestones, shipped prototypes, technical competencies, and academic honors.
 - [Agentic Resource Discovery Manifest](https://franklyn.page/.well-known/ard.json): Machine-readable ARD discovery manifest for AI agents, MCP clients, and registries.
 - [Personal Launchpad](https://franklyn.page/): Interactive web portfolio and personal launchpad.
+- [Thoughts & Perspectives Archive](https://franklyn.page/thoughts): Written essays and memos on product discovery, agentic AI, and Silicon Valley lessons.
 - [XML Sitemap](https://franklyn.page/sitemap.xml): Search engine and web crawler discovery index.
 
 ## Verified Profiles & Links
@@ -15,9 +16,16 @@
 - [Google Search Knowledge Panel](https://www.google.com/search?q=jasson+franklyn+wang&oq=jasson+franklyn+wang&udm=50): Verified Google Search knowledge graph and identity.
 - [Direct Email](mailto:jassonfranklyn@gmail.com): Direct contact for inquiries, collaborations, and discussions.
 
+## Shipped Products & AI Architectures
+- [WriteFrankly](https://writefrankly.ai.studio/): Private journaling companion for unvarnished reflection without performance or fear of consequence. Built with dynamic Gemini API dialogue flows, in-RAM PII masking, Web Crypto AES-GCM 256-bit encryption at rest, and instant onboarding on Cloud Run with zero data loss.
+- [MakanSini 2.0](https://github.com/4ranklyn/MakanSiniv2): Cross-platform culinary intelligence MVP shipping in 7 days. Integrated Gemini and Google Places APIs on Cloud Run with strict prompt-injection defenses and sub-400ms p95 latency; presented live at Google I/O 2026 (Mountain View) as student global marketing pitch champion.
+- [VeraGate](https://github.com/4ranklyn/veragate): Autonomous multimodal forensic audit engine leveraging Gemini 3 (Watcher & Auditor dual-agent architecture) to detect spatial, temporal, and specification contradictions between video evidence and technical PDF documentation via Server-Sent Events.
+- [CeKulit](https://github.com/4ranklyn/cekulit-ml): Cross-functional AI skin diagnostic MVP engineered with TensorFlow CNN models (84%+ accuracy) deployed to Cloud Flask API with sub-$1/day operational COGS (92.5/100 capstone jury score).
+
 ## Key Career Milestones
-- [Privy Product Management](https://franklyn.page/llms-full.txt#privy): Product Manager Intern at PT Privy Identitas Digital focusing on digital trust, identity verification, and product discovery workflows.
-- [Google I/O 2026 Mountain View](https://franklyn.page/llms-full.txt#google-io-2026): Selected as 1 of 7 Indonesian delegates in Mountain View, California; presented the MakanSini prototype and won 1st Place in the Student Global Marketing Pitch Challenge.
-- [Top 100 Google Student Ambassador](https://franklyn.page/llms-full.txt#google-student-ambassador): 2nd gen, 1st cohort (2025) Rising Star tier; 2x Content Grand Champion achieving 120,000+ organic content reach.
-- [Bangkit Academy](https://franklyn.page/llms-full.txt#bangkit-academy): Machine Learning Apprentice and Capstone Product Manager leading the CeKulit project (H2 2024 cohort).
-- [UNS Informatics & Honours](https://franklyn.page/llms-full.txt#education): Bachelor of Informatics from Universitas Sebelas Maret (UNS), ICIC 2026 published researcher, and TEDxUNS Student Speaker Finalist.
+- [Privy Product Management](https://franklyn.page/llms-full.txt#privy): Product Manager Intern at PT Privy Identitas Digital focusing on digital trust, electronic identity verification, and PRD discovery workflows.
+- [Google I/O 2026 Mountain View](https://franklyn.page/llms-full.txt#google-io-2026): Selected as 1 of 7 Indonesian delegates from 800+ candidates (0.875% acceptance rate) in Mountain View, California; pitched winning GTM campaign in the global Dragons' Den challenge for Gemini.
+- [Top 100 Google Student Ambassador](https://franklyn.page/llms-full.txt#google-student-ambassador): 2nd gen, 1st cohort (2025–2026); 2x Content Grand Champion generating 180,000+ organic developer impressions.
+- [UNS Hospital Project Management](https://franklyn.page/llms-full.txt#uns-hospital): Co-managed 8 two-week Agile sprints across 15+ clinical workflows and engineered Telegram webhook automations cutting ticketing latency by 30%.
+- [Bangkit Academy](https://franklyn.page/llms-full.txt#bangkit-academy): Machine Learning Apprentice and Capstone Product Manager leading the CeKulit squad (H2 2024 cohort).
+- [UNS Computer Science](https://franklyn.page/llms-full.txt#education): B.Cs. (S.Kom.) in Computer Science from Universitas Sebelas Maret (3.67 GPA), thesis on Swin Transformer and IndoBARTv2 for Indonesian image captioning.
