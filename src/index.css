@@ -64,9 +64,10 @@
 /* 3. Section Headings: Structural, Semi-Expanded Architecture */
 .section-heading {
   font-family: 'Google Sans Flex', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 620;
-  font-variation-settings: 'wght' 620, 'wdth' 110, 'opsz' 28;
-  letter-spacing: -0.025em;
+  font-weight: 680;
+  font-variation-settings: 'wght' 680, 'wdth' 108, 'opsz' 36;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 
 /* 4. Metadata & Technical Badges: Ultra-Condensed, Precision Technical Spec */
