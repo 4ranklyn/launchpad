@@ -134,12 +134,17 @@
   -webkit-box-decoration-break: clone;
 }
 
-.group:hover .sliding-underline,
-.group:focus-within .sliding-underline,
 .group.is-expanded .sliding-underline,
-.sliding-underline:hover,
 .sliding-underline:focus-visible {
   background-size: 100% 1.25px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .group:hover .sliding-underline,
+  .group:focus-within .sliding-underline,
+  .sliding-underline:hover {
+    background-size: 100% 1.25px;
+  }
 }
 
 /* Fluid Sliding Highlight Effect */
@@ -181,7 +186,7 @@
   text-decoration-color: transparent;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .sliding-link:hover::before,
   .group:hover .sliding-link::before {
     width: 100%;
@@ -228,7 +233,7 @@
   transform: translateY(0) scale(1) !important;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .group:hover .wordmark-social-tray {
     opacity: 1 !important;
     pointer-events: auto !important;
@@ -245,7 +250,7 @@
 }
 
 /* Expand smoothly on hover for desktop */
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .group:hover .expandable-drawer {
     grid-template-rows: 1fr;
     opacity: 1;
