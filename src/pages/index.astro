@@ -951,7 +951,7 @@ const currentYear = new Date().getFullYear();
             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
           </svg>
           <span class="leading-tight">
-            <strong class="font-medium">Tip:</strong> Tap any role, credential, or project to expand its details.
+            <strong class="font-medium">Tip:</strong> Tap my name or any role, credential, or project to expand its details.
           </span>
         </div>
         <button
@@ -1061,25 +1061,22 @@ const currentYear = new Date().getFullYear();
         });
       });
 
-      // First-time mobile visitor guide toast
+      // Mobile visitor guide toast (shown on every page load/refresh)
       const isMobileDevice = window.matchMedia('(max-width: 640px)').matches || ('ontouchstart' in window);
-      const hintKey = 'jf_touch_hint_dismissed_v1';
       const touchHint = document.getElementById('mobile-touch-hint');
       const dismissBtn = document.getElementById('dismiss-touch-hint');
 
-      if (isMobileDevice && touchHint && !localStorage.getItem(hintKey)) {
+      if (isMobileDevice && touchHint) {
         // Show after a brief delay so page stabilizes
-        setTimeout(() => {
+        const showTimer = window.setTimeout(() => {
           touchHint.classList.remove('translate-y-24', 'opacity-0');
           touchHint.classList.add('translate-y-0', 'opacity-100');
         }, 800);
 
         const dismiss = () => {
+          window.clearTimeout(showTimer);
           touchHint.classList.remove('translate-y-0', 'opacity-100');
           touchHint.classList.add('translate-y-24', 'opacity-0');
-          try {
-            localStorage.setItem(hintKey, 'true');
-          } catch (_) {}
         };
 
         if (dismissBtn) {
@@ -1089,7 +1086,16 @@ const currentYear = new Date().getFullYear();
           });
         }
 
-        // Auto-dismiss once the user taps any expandable item
+        // Auto-dismiss once the user taps my name or any expandable item
+        if (trigger) {
+          trigger.addEventListener('pointerup', () => {
+            dismiss();
+          }, { once: true });
+          trigger.addEventListener('click', () => {
+            dismiss();
+          }, { once: true });
+        }
+
         expandableItems.forEach((item) => {
           item.addEventListener('click', () => {
             dismiss();
