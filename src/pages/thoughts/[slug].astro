@@ -44,8 +44,8 @@ const currentYear = new Date().getFullYear();
     <meta property="og:title" content={`${thought.title} · jasson franklyn wang`} />
     <meta property="og:description" content={thought.summary} />
     <meta property="og:url" content={`https://franklyn.page/thoughts/${thought.slug}`} />
-    <meta property="og:image" content="https://franklyn.page/og-image.svg" />
-    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image" content={thought.coverImage?.src ? `https://franklyn.page${thought.coverImage.src}` : "https://franklyn.page/og-image.svg"} />
+    <meta property="og:image:type" content={thought.coverImage?.src ? "image/webp" : "image/svg+xml"} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_US" />
@@ -59,7 +59,7 @@ const currentYear = new Date().getFullYear();
     <meta name="twitter:creator" content="@franklynical" />
     <meta name="twitter:title" content={`${thought.title} · jasson franklyn wang`} />
     <meta name="twitter:description" content={thought.summary} />
-    <meta name="twitter:image" content="https://franklyn.page/og-image.svg" />
+    <meta name="twitter:image" content={thought.coverImage?.src ? `https://franklyn.page${thought.coverImage.src}` : "https://franklyn.page/og-image.svg"} />
 
     <!-- Google Sans Flex Full Multi-Axis Variable Delivery -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -151,6 +151,27 @@ const currentYear = new Date().getFullYear();
           </div>
         </header>
 
+        <!-- Cover Image -->
+        {thought.coverImage && (
+          <figure class="pt-2 pb-2">
+            <div class="overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 shadow-sm">
+              <img
+                src={thought.coverImage.src}
+                alt={thought.coverImage.alt}
+                class="w-full h-auto max-h-[560px] object-cover"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            {thought.coverImage.caption && (
+              <figcaption class="mt-2 text-sm text-[var(--text-secondary)]">
+                {thought.coverImage.caption}
+              </figcaption>
+            )}
+          </figure>
+        )}
+
         <!-- Article Content -->
         <section class="space-y-6 text-[1.0625rem] sm:text-[1.1875rem] md:text-[1.25rem] leading-[1.75] text-[var(--text-primary)] pt-2">
           {thought.contentBlocks ? (
@@ -174,6 +195,27 @@ const currentYear = new Date().getFullYear();
                   <blockquote class="editorial-slant pl-4 border-l-2 border-black/25 dark:border-white/30 text-base sm:text-lg my-6 text-[var(--text-secondary)] leading-relaxed">
                     {block.text}
                   </blockquote>
+                );
+              }
+              if (block.type === 'img') {
+                const isCompact = block.size === 'compact';
+                return (
+                  <figure class={`my-8 ${isCompact ? 'max-w-sm sm:max-w-md mx-auto' : 'w-full'}`}>
+                    <div class="overflow-hidden rounded-2xl border border-black/10 dark:border-white/10 bg-black/5 dark:bg-white/5 shadow-sm">
+                      <img
+                        src={block.src}
+                        alt={block.alt ?? ''}
+                        loading="lazy"
+                        decoding="async"
+                        class={`w-full h-auto object-cover ${isCompact ? 'max-h-[460px]' : 'max-h-[540px]'}`}
+                      />
+                    </div>
+                    {block.caption && (
+                      <figcaption class="mt-[0.8rem] text-center text-sm font-normal text-[var(--text-secondary)]">
+                        {block.caption}
+                      </figcaption>
+                    )}
+                  </figure>
                 );
               }
               return <p>{block.text}</p>;

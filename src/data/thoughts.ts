@@ -1,6 +1,10 @@
 export interface ThoughtBlock {
-  type: 'p' | 'h2' | 'h3' | 'blockquote';
-  text: string;
+  type: 'p' | 'h2' | 'h3' | 'blockquote' | 'img';
+  text?: string;
+  src?: string;
+  alt?: string;
+  caption?: string;
+  size?: 'wide' | 'compact';
 }
 
 export interface ThoughtEntry {
@@ -12,6 +16,11 @@ export interface ThoughtEntry {
   summary: string;
   paragraphs: string[];
   externalUrl?: string;
+  coverImage?: {
+    src: string;
+    alt: string;
+    caption?: string;
+  };
   contentBlocks?: ThoughtBlock[];
 }
 
@@ -24,6 +33,11 @@ export const thoughts: ThoughtEntry[] = [
     readTime: '6 min read',
     summary: "It has been a while since I lived a short life in Mountain View, California. May 2026 had me always pinching myself every night, just because I still can't believe I travelled 20,000 miles to witness how are the future of agentic AI.",
     externalUrl: 'https://www.linkedin.com/pulse/memo-from-valley-when-young-local-ambition-met-core-all-wang-p6wzc/',
+    coverImage: {
+      src: '/thoughts/what-mountain-view-taught-me/touchdown-golden-gate.webp',
+      alt: 'Memo from The Valley: When Young Local Ambition Met the Core of All Tech',
+      caption: "Touchdown! We're at the legendary Golden Gate!"
+    },
     contentBlocks: [
       {
         type: 'p',
@@ -32,6 +46,13 @@ export const thoughts: ThoughtEntry[] = [
       {
         type: 'p',
         text: "Google selected 7 Google Student Ambassador Indonesia representatives from hundreds and thousands available, and it's also been a journey with them since the first time we briefed our visa camp around April."
+      },
+      {
+        type: 'img',
+        src: '/thoughts/what-mountain-view-taught-me/7-ambassadors-delegates.webp',
+        alt: '7 Google Indonesian Ambassador Delegates',
+        caption: '7 Google Indonesian Ambassador Delegates',
+        size: 'compact'
       },
       {
         type: 'h3',
@@ -58,6 +79,13 @@ export const thoughts: ThoughtEntry[] = [
         text: "So I thought why don't I submit this one to the form. Little did I know, the Creative Technologist seemed to like it (I presented it shortly during Aaron Wade 's session about 'Vibe-Coding' too)."
       },
       {
+        type: 'img',
+        src: '/thoughts/what-mountain-view-taught-me/presenting-makansini.webp',
+        alt: 'presenting my MakanSini prototype (read: EatHere)',
+        caption: 'presenting my MakanSini prototype (read: EatHere)',
+        size: 'wide'
+      },
+      {
         type: 'p',
         text: "Looking back, I didn't expect that my fun little side project would be as valued as they are a growing startup, existing products, or a simple yet very useful feature. And for a product builder like me, this was a huge signal."
       },
@@ -74,12 +102,26 @@ export const thoughts: ThoughtEntry[] = [
         text: "Looking back, the whole room with fellow ambassadors gave another kind of bliss. Everyone was so welcoming as much as they were so sharp and perceptive. I remembered my Dragons' Den team (our fun marketing challenge) were so drowned in capturing the victory that we still kept in touch to prepare our deck even when we were apart (I still remember giving them some help while I was walking at 9 PM around Stanford)."
       },
       {
+        type: 'img',
+        src: '/thoughts/what-mountain-view-taught-me/winning-ten-dragons.webp',
+        alt: 'the winning Ten Dragons!',
+        caption: 'the winning Ten Dragons!',
+        size: 'compact'
+      },
+      {
         type: 'h2',
         text: 'The vibes are very inclusive (even if the bar is so high and so thick)'
       },
       {
         type: 'p',
         text: "I still didn't stress enough that as a foreigner, travelling to somewhere like the U.S. is so hard and rigorous. The selection was as rough as it was unexpected too."
+      },
+      {
+        type: 'img',
+        src: '/thoughts/what-mountain-view-taught-me/final-photo-together.webp',
+        alt: 'final photo together!',
+        caption: 'final photo together!',
+        size: 'wide'
       },
       {
         type: 'p',
@@ -110,8 +152,22 @@ export const thoughts: ThoughtEntry[] = [
         text: "We know top 3 target is law for breaking through in prestigious career pipeline, as well as a student internship experience(s), so this is heartbreakingly normal yet so gut-wrenching and mind-bending. I came from a student delegated to Mountain View, to desperately navigating hundreds of job applications and rejections over rejections. The blow is so hard I started question my own worth every single day."
       },
       {
+        type: 'img',
+        src: '/thoughts/what-mountain-view-taught-me/job-applications-3-months.webp',
+        alt: 'Job Application Tracker',
+        caption: 'no words needed (this is in 3 months)',
+        size: 'wide'
+      },
+      {
         type: 'p',
         text: "This is why I mentioned the barrier is so tall and so thick. The current situation might be devastating, but as a third-world-young-generation, grit is our best friend. This is proven by the playmakers who are the current billionaires holding the tech pillars exist today. The same grit can also be applied in this sparse condition. Even if that mean days of slow progress, constant rejections, and strict operations."
+      },
+      {
+        type: 'img',
+        src: '/thoughts/what-mountain-view-taught-me/ship-has-set-for-land.webp',
+        alt: 'the ship has set for land after 3 months',
+        caption: 'the ship has set for land after 3 months',
+        size: 'compact'
       },
       {
         type: 'p',
