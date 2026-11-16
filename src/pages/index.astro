@@ -968,29 +968,29 @@ const currentYear = new Date().getFullYear();
       </footer>
     </main>
 
-    <!-- First-Time Mobile User Guide Banner -->
+    <!-- Mobile User Guide Banner -->
     <aside
       id="mobile-touch-hint"
       role="status"
       aria-live="polite"
-      class="fixed bottom-4 left-4 right-4 sm:hidden z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none"
+      class="fixed top-4 left-4 right-4 sm:hidden z-50 transform -translate-y-32 opacity-0 transition-all duration-300 pointer-events-none"
     >
-      <div class="pointer-events-auto flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-lg border border-black/15 dark:border-white/20 bg-[var(--link-invert-bg)] text-[var(--link-invert-text)] shadow-2xl backdrop-blur-md">
-        <div class="flex items-center gap-2.5 text-xs font-normal">
-          <svg class="w-4 h-4 shrink-0 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <div class="pointer-events-auto flex items-center justify-between gap-3.5 px-4 py-3.5 rounded-xl border border-black/15 dark:border-white/20 bg-[var(--link-invert-bg)] text-[var(--link-invert-text)] shadow-2xl backdrop-blur-md">
+        <div class="flex items-center gap-3 text-sm font-normal">
+          <svg class="w-5 h-5 shrink-0 opacity-85" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
           </svg>
-          <span class="leading-tight">
-            <strong class="font-medium">Tip:</strong> Tap my name or any role, credential, or project to expand its details.
+          <span class="leading-snug">
+            <strong class="font-semibold">Tip:</strong> Tap my name or any role, credential, or project to expand its details.
           </span>
         </div>
         <button
           id="dismiss-touch-hint"
           type="button"
           aria-label="Dismiss hint"
-          class="shrink-0 p-1 rounded hover:opacity-75 transition-opacity text-inherit"
+          class="shrink-0 p-2 -mr-1 rounded-lg hover:opacity-75 transition-opacity text-inherit"
         >
-          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"/>
             <line x1="6" y1="6" x2="18" y2="18"/>
           </svg>
@@ -1099,14 +1099,14 @@ const currentYear = new Date().getFullYear();
       if (isMobileDevice && touchHint) {
         // Show after a brief delay so page stabilizes
         const showTimer = window.setTimeout(() => {
-          touchHint.classList.remove('translate-y-24', 'opacity-0');
+          touchHint.classList.remove('-translate-y-32', 'opacity-0');
           touchHint.classList.add('translate-y-0', 'opacity-100');
         }, 800);
 
         const dismiss = () => {
           window.clearTimeout(showTimer);
           touchHint.classList.remove('translate-y-0', 'opacity-100');
-          touchHint.classList.add('translate-y-24', 'opacity-0');
+          touchHint.classList.add('-translate-y-32', 'opacity-0');
         };
 
         if (dismissBtn) {

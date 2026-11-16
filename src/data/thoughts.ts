@@ -43,7 +43,7 @@ export const thoughts: ThoughtEntry[] = [
       },
       {
         type: 'p',
-        text: "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero."
+        text: "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero. As you know, 'performative male' archetype has just appeared in the middle of last year. This more recent variant is even more aggressive and performative."
       },
       {
         type: 'p',
@@ -67,7 +67,7 @@ export const thoughts: ThoughtEntry[] = [
       },
       {
         type: 'p',
-        text: "To be clear on what the role actually is: a Google Student Ambassador Moderator isn't a salaried Google employee setting Gemini activation strategy. It is an elected student volunteer role designed to lead certain ambassador events, say the first GSA 2026 graduation event last August."
+        text: "To be clear on what the role actually is: a Google Student Ambassador Moderator isn't a salaried Google employee setting Gemini activation strategy. It is an elected student volunteer role designed to lead certain ambassador events, say the first batch of Indonesia's GSA 2026 graduation event last August."
       },
       {
         type: 'p',
@@ -116,12 +116,12 @@ export const thoughts: ThoughtEntry[] = [
     ],
     paragraphs: [
       "We can’t pretend AI is just a productivity hack anymore. It edits videos, orders groceries, scripts workflows, and, if you have zero shame, fakes your entire reality. People are literally faking vacations with diffusion models now.",
-      "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero.",
+      "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero. As you know, 'performative male' archetype has just appeared in the middle of last year. This more recent variant is even more aggressive and performative.",
       "The case that broke my feed started with an anomaly. An ambassador popped up out of nowhere with zero traceable roots or verifiable background, suddenly claiming on LinkedIn and Instagram to work under \"Google Gemini\" doing Social Media Marketing in the UK. A few people bought it immediately. When I quietly asked some of my peers in proximity, nobody verified anything, yet nobody wanted to question it either. So the illusion held with zero flaws.",
       "Soon, the boasts escalated. They posted grand paragraphs about their massive community \"impact,\" tagging official Googlers and regional leads for verified credibility. But the minute another ambassador reached out with basic questions about collaboration legality and logistics, they ghosted instantly. Meanwhile, persona event stories revealed they were physically operating out of an entirely different country, miles away from the UK office they claimed to represent.",
       "Fast forward a few months, and the title evolved: \"Google Student Ambassador Moderator.\"",
       "“Wow, this looks so inspiring,” said 98% of people in the comments. To anyone actually doing the work, it was peak idiocracy.",
-      "To be clear on what the role actually is: a Google Student Ambassador Moderator isn't a salaried Google employee setting Gemini activation strategy. It is an elected student volunteer role designed to lead certain ambassador events, say the first GSA 2026 graduation event last August.",
+      "To be clear on what the role actually is: a Google Student Ambassador Moderator isn't a salaried Google employee setting Gemini activation strategy. It is an elected student volunteer role designed to lead certain ambassador events, say the first batch of Indonesia's GSA 2026 graduation event last August.",
       "Watching someone stroll in with a completely fabricated track record and claim an aspired leadership title felt like an insult to thousands of ambassadors who grind every week to progress legitimately, including myself.",
       "When I saw on that moderator title, I spent weeks doubting back and forth. I was a student from UNS commuting on an aging 2003 Honda Supra, showing up to organize solo events while wondering if I had any business guiding anyone. I didn’t feel like a tech influencer, and I didn't have a corporate veneer. But I earned my place through friction: running actual workshops where students built AI proof of concepts; untangling ground-level logistics; and accepting success by whether a student left with a tangible skill, not by manufactured vanity reach.",
       "Then, on October 7, Google released synthid.com. A tool to detect synthetic watermarks embedded in AI-generated imagery. I decided to run a quick test. I took their latest LinkedIn post, a photo of him standing proudly in front of a \"Google Gemini\" event backdrop with a polished, waxy complexion and identical pose, and fed it into the detector.",
