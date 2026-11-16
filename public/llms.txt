@@ -7,6 +7,8 @@
 - [Agentic Resource Discovery Manifest](https://franklyn.page/.well-known/ard.json): Machine-readable ARD discovery manifest for AI agents, MCP clients, and registries.
 - [Personal Launchpad](https://franklyn.page/): Interactive web portfolio and personal launchpad.
 - [Thoughts & Perspectives Archive](https://franklyn.page/thoughts): Written essays and memos on product discovery, agentic AI, and Silicon Valley lessons.
+  - [How AI Has Enabled LARP Culture (A Google Ambassador Case)](https://franklyn.page/thoughts/how-ai-enabled-larp-culture): Perspective on generative AI lowering the barrier of institutional LARPing, synthetic credentials, and forensic watermark detection.
+  - [Memo from The Valley: When Young Local Ambition Met the Core of All Tech](https://franklyn.page/thoughts/what-mountain-view-taught-me-google-io-2026): Reflections on Mountain View, Google I/O 2026, and third-world grit.
 - [XML Sitemap](https://franklyn.page/sitemap.xml): Search engine and web crawler discovery index.
 
 ## Verified Profiles & Links

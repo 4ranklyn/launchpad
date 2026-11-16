@@ -1,6 +1,7 @@
 export interface ThoughtBlock {
-  type: 'p' | 'h2' | 'h3' | 'blockquote' | 'img';
+  type: 'p' | 'h2' | 'h3' | 'blockquote' | 'img' | 'ul';
   text?: string;
+  items?: string[];
   src?: string;
   alt?: string;
   caption?: string;
@@ -12,6 +13,7 @@ export interface ThoughtEntry {
   title: string;
   category: string;
   date: string;
+  publishDate?: string;
   readTime: string;
   summary: string;
   paragraphs: string[];
@@ -26,10 +28,116 @@ export interface ThoughtEntry {
 
 export const thoughts: ThoughtEntry[] = [
   {
+    slug: 'how-ai-enabled-larp-culture',
+    title: 'How AI Has Enabled LARP Culture (A Google Ambassador Case)',
+    category: 'Perspective',
+    date: 'Nov 2026',
+    publishDate: '2026-11-16',
+    readTime: '3 min read',
+    summary: "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero. The era of synthetic credentials is here. Don't fall for the render, look for the friction.",
+    externalUrl: 'https://franklyn.page/thoughts/how-ai-enabled-larp-culture',
+    contentBlocks: [
+      {
+        type: 'p',
+        text: "We can’t pretend AI is just a productivity hack anymore. It edits videos, orders groceries, scripts workflows, and, if you have zero shame, fakes your entire reality. People are literally faking vacations with diffusion models now."
+      },
+      {
+        type: 'p',
+        text: "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero."
+      },
+      {
+        type: 'p',
+        text: "The case that broke my feed started with an anomaly. An ambassador popped up out of nowhere with zero traceable roots or verifiable background, suddenly claiming on LinkedIn and Instagram to work under \"Google Gemini\" doing Social Media Marketing in the UK. A few people bought it immediately. When I quietly asked some of my peers in proximity, nobody verified anything, yet nobody wanted to question it either. So the illusion held with zero flaws."
+      },
+      {
+        type: 'p',
+        text: "Soon, the boasts escalated. They posted grand paragraphs about their massive community \"impact,\" tagging official Googlers and regional leads for verified credibility. But the minute another ambassador reached out with basic questions about collaboration legality and logistics, they ghosted instantly. Meanwhile, persona event stories revealed they were physically operating out of an entirely different country, miles away from the UK office they claimed to represent."
+      },
+      {
+        type: 'p',
+        text: "Fast forward a few months, and the title evolved: \"Google Student Ambassador Moderator.\""
+      },
+      {
+        type: 'blockquote',
+        text: "“Wow, this looks so inspiring,” said 98% of people in the comments."
+      },
+      {
+        type: 'p',
+        text: "To anyone actually doing the work, it was peak idiocracy."
+      },
+      {
+        type: 'p',
+        text: "To be clear on what the role actually is: a Google Student Ambassador Moderator isn't a salaried Google employee setting Gemini activation strategy. It is an elected student volunteer role designed to lead certain ambassador events, say the first GSA 2026 graduation event last August."
+      },
+      {
+        type: 'p',
+        text: "Watching someone stroll in with a completely fabricated track record and claim an aspired leadership title felt like an insult to thousands of ambassadors who grind every week to progress legitimately, including myself."
+      },
+      {
+        type: 'p',
+        text: "When I saw on that moderator title, I spent weeks doubting back and forth. \nI was a student from UNS commuting on an aging 2003 Honda Supra, showing up to organize solo events while wondering if I had any business guiding anyone. I didn’t feel like a tech influencer, and I didn't have a corporate veneer. But I earned my place through friction:"
+      },
+      {
+        type: 'ul',
+        items: [
+          "Running actual workshops where students built AI proof of concepts, not just vague discussions.",
+          "Untangling ground-level logistics: setting up venues and handling real community chaos.",
+          "Accepting success by whether a student left with a tangible skill, not by manufactured vanity reach."
+        ]
+      },
+      {
+        type: 'p',
+        text: "Then, on October 7, Google released synthid.com. A tool to detect synthetic watermarks embedded in AI-generated imagery. I decided to run a quick test. I took their latest LinkedIn post, a photo of him standing proudly in front of a \"Google Gemini\" event backdrop with a polished, waxy complexion and identical pose, and fed it into the detector."
+      },
+      {
+        type: 'p',
+        text: "The verdict flashed immediately:"
+      },
+      {
+        type: 'blockquote',
+        text: "\"This photo was edited or generated with OpenAI.\""
+      },
+      {
+        type: 'p',
+        text: "The irony is almost poetic. A person claiming to represent Google Gemini at the global level, generating a fake event photo of themselves using OpenAI, and getting caught red-handed by Google’s own forensic tool."
+      },
+      {
+        type: 'p',
+        text: "The tragic part isn’t that they tried to fake it. It’s that the system rewarded them anyway. When verification is lazy and vanity metrics reign supreme, synthetic confidence beats quiet competence. People, even actual Googlers, already vouched for the facade because the posts looked shiny, balanced, polished, and friction-free."
+      },
+      {
+        type: 'p',
+        text: "AI makes it trivially easy to generate the illusion of impact. But you can't prompt your way into true technical competence, and you can't fake the grit it takes to deliver when you feel completely underqualified."
+      },
+      {
+        type: 'p',
+        text: "The era of synthetic credentials is here. Don't fall for the render, look for the friction."
+      }
+    ],
+    paragraphs: [
+      "We can’t pretend AI is just a productivity hack anymore. It edits videos, orders groceries, scripts workflows, and, if you have zero shame, fakes your entire reality. People are literally faking vacations with diffusion models now.",
+      "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero.",
+      "The case that broke my feed started with an anomaly. An ambassador popped up out of nowhere with zero traceable roots or verifiable background, suddenly claiming on LinkedIn and Instagram to work under \"Google Gemini\" doing Social Media Marketing in the UK. A few people bought it immediately. When I quietly asked some of my peers in proximity, nobody verified anything, yet nobody wanted to question it either. So the illusion held with zero flaws.",
+      "Soon, the boasts escalated. They posted grand paragraphs about their massive community \"impact,\" tagging official Googlers and regional leads for verified credibility. But the minute another ambassador reached out with basic questions about collaboration legality and logistics, they ghosted instantly. Meanwhile, persona event stories revealed they were physically operating out of an entirely different country, miles away from the UK office they claimed to represent.",
+      "Fast forward a few months, and the title evolved: \"Google Student Ambassador Moderator.\"",
+      "“Wow, this looks so inspiring,” said 98% of people in the comments. To anyone actually doing the work, it was peak idiocracy.",
+      "To be clear on what the role actually is: a Google Student Ambassador Moderator isn't a salaried Google employee setting Gemini activation strategy. It is an elected student volunteer role designed to lead certain ambassador events, say the first GSA 2026 graduation event last August.",
+      "Watching someone stroll in with a completely fabricated track record and claim an aspired leadership title felt like an insult to thousands of ambassadors who grind every week to progress legitimately, including myself.",
+      "When I saw on that moderator title, I spent weeks doubting back and forth. I was a student from UNS commuting on an aging 2003 Honda Supra, showing up to organize solo events while wondering if I had any business guiding anyone. I didn’t feel like a tech influencer, and I didn't have a corporate veneer. But I earned my place through friction: running actual workshops where students built AI proof of concepts; untangling ground-level logistics; and accepting success by whether a student left with a tangible skill, not by manufactured vanity reach.",
+      "Then, on October 7, Google released synthid.com. A tool to detect synthetic watermarks embedded in AI-generated imagery. I decided to run a quick test. I took their latest LinkedIn post, a photo of him standing proudly in front of a \"Google Gemini\" event backdrop with a polished, waxy complexion and identical pose, and fed it into the detector.",
+      "The verdict flashed immediately: \"This photo was edited or generated with OpenAI.\"",
+      "The irony is almost poetic. A person claiming to represent Google Gemini at the global level, generating a fake event photo of themselves using OpenAI, and getting caught red-handed by Google’s own forensic tool.",
+      "The tragic part isn’t that they tried to fake it. It’s that the system rewarded them anyway. When verification is lazy and vanity metrics reign supreme, synthetic confidence beats quiet competence. People, even actual Googlers, already vouched for the facade because the posts looked shiny, balanced, polished, and friction-free.",
+      "AI makes it trivially easy to generate the illusion of impact. But you can't prompt your way into true technical competence, and you can't fake the grit it takes to deliver when you feel completely underqualified.",
+      "The era of synthetic credentials is here. Don't fall for the render, look for the friction."
+    ]
+  },
+  {
     slug: 'what-mountain-view-taught-me-google-io-2026',
     title: 'Memo from The Valley: When Young Local Ambition Met the Core of All Tech',
     category: 'Memo',
     date: 'Oct 2026',
+    publishDate: '2026-10-01',
     readTime: '6 min read',
     summary: "It has been a while since I lived a short life in Mountain View, California. May 2026 had me always pinching myself every night, just because I still can't believe I travelled 20,000 miles to witness how are the future of agentic AI.",
     externalUrl: 'https://www.linkedin.com/pulse/memo-from-valley-when-young-local-ambition-met-core-all-wang-p6wzc/',

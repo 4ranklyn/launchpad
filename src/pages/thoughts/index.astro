@@ -104,25 +104,30 @@ const currentYear = new Date().getFullYear();
         <section class="space-y-8 sm:space-y-10">
           {thoughts.map((thought) => (
             <article class="space-y-2.5 pt-1">
-              <a href={`/thoughts/${thought.slug}`} class="group block space-y-2">
-                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
-                  <h2 class="text-xl sm:text-2xl font-medium text-[var(--text-primary)] group-hover:text-[var(--text-primary)] transition-colors inline-flex items-center gap-1.5">
-                    <span class="sliding-underline">{thought.title}</span>
-                    <span class="inline-block text-base text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
-                      ↗
-                    </span>
+              <div class="group block space-y-2">
+                <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-6">
+                  <h2 class="text-xl sm:text-2xl font-medium text-[var(--text-primary)] min-w-0">
+                    <a
+                      href={`/thoughts/${thought.slug}`}
+                      class="sliding-underline inline-flex items-center gap-1.5 hover:text-[var(--text-primary)]"
+                    >
+                      <span>{thought.title}</span>
+                      <span class="inline-block text-base text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 select-none">
+                        ↗
+                      </span>
+                    </a>
                   </h2>
-                  <div class="flex items-center gap-2 text-xs">
+                  <div class="flex items-center gap-2 text-xs shrink-0 whitespace-nowrap pt-0.5 sm:pt-0">
                     <span class="metadata-tag text-[var(--text-secondary)] shrink-0">{thought.category} · {thought.date}</span>
                     <span class="text-[var(--text-secondary)] opacity-40">·</span>
-                    <span class="metadata-tag text-[var(--text-secondary)] opacity-80">{thought.readTime}</span>
+                    <span class="metadata-tag text-[var(--text-secondary)] opacity-80 shrink-0">{thought.readTime}</span>
                   </div>
                 </div>
 
                 <p class="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed pl-3 border-l-2 border-black/15 dark:border-white/20">
                   {thought.summary}
                 </p>
-              </a>
+              </div>
             </article>
           ))}
         </section>
