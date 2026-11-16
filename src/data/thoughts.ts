@@ -24,6 +24,7 @@ export interface ThoughtEntry {
     caption?: string;
   };
   contentBlocks?: ThoughtBlock[];
+  disclaimer?: string;
 }
 
 export const thoughts: ThoughtEntry[] = [
@@ -36,6 +37,7 @@ export const thoughts: ThoughtEntry[] = [
     readTime: '3 min read',
     summary: "Generative AI didn't just lower the barrier to create; it lowered the cost of institutional LARPing (Live Action Role-Playing) to zero. The era of synthetic credentials is here. Don't fall for the render, look for the friction.",
     externalUrl: 'https://franklyn.page/thoughts/how-ai-enabled-larp-culture',
+    disclaimer: "These thoughts are all mine and by no means I use these thought to represent any brand or anyone else but me.",
     contentBlocks: [
       {
         type: 'p',

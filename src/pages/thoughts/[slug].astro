@@ -149,6 +149,12 @@ const currentYear = new Date().getFullYear();
               </a>
             )}
           </div>
+
+          {thought.disclaimer && (
+            <p class="text-xs sm:text-[13px] leading-relaxed text-[var(--text-secondary)] opacity-80">
+              {thought.disclaimer}
+            </p>
+          )}
         </header>
 
         <!-- Cover Image -->
